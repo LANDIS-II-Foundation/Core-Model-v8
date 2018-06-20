@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <!-- Give product a unique Id per platform.  Change when product version changed-->
+  <?if $(var.Platform)=x64 ?>
+  <?define ProductCode = "{B6C6E3AB-9AFB-411A-A4A2-910EA0E2295E}" ?>
+  <?else?>
+  <?define ProductCode = "{D3CF669F-BD93-4205-9E8E-B44EB646B750}"?>
+  <?endif?>
+  
+    <!-- Fixed upgrade Id. DO NOT CHANGE!! -->
+  <?define UpgradeCode = "{74D10CF9-0FD0-4F6D-8879-64E5D479D6BA}"?>
+  
+	<Product Id="$(var.ProductCode)" 
+           Name="!(loc.ProductNameFolder)" 
+           Language="!(loc.Language)" 
+           Version="7.0.0.0" 
+           Manufacturer="!(loc.Company)" 
+           UpgradeCode="$(var.UpgradeCode)">
+    
+		<Package 
+      InstallerVersion="200"
+      Compressed="yes"
+      InstallScope="perMachine"
+      Platform="$(var.Platform)"
+      Manufacturer="!(loc.Company)"
+      Description="!(loc.Description)"
+      Comments="!(loc.Comments)"
+      Languages="!(loc.Language)" />
+
+    <!-- Downgrade error message -->
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+    <!-- Include .cab file into .msi file -->
+    <MediaTemplate EmbedCab="yes"/>
+    
+    <Property Id="ARPURLINFOABOUT">https://sites.google.com/site/landismodel/home</Property>
+
+    <UIRef Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\license\LANDIS-II_Binary_license.rtf"/>
+   
+    
+    <!-- *** Define components, shortcuts, files etc... for installer *** -->
+		<Feature Id="ProductFeature" Title="LANDIS-II-v7" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="LandisComponents"/>
+      <ComponentRef Id="Extensions"/>
+      <ComponentGroupRef Id="CommandComponents"/>
+      <ComponentGroupRef Id="LicenseComponents"/>
+      <!--<ComponentGroupRef Id="RuntimeWinCoreComponents"/>-->
+    </Feature>
+  </Product>
+  
+  
+  <!-- *** Directories *** -->
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+
+      <?if $(var.Platform)=x64 ?>
+      <Directory Id="ProgramFiles64Folder">
+        <!-- "LANDIS-II-v7" folder-->
+        <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)" >
+          <Directory Id="ReleaseVersion" Name="v7">
+            <Directory Id="RuntimeWinCore" Name="runtimes"/>
+          </Directory>
+          
+          <Directory Id="Extensions" Name="extensions">
+            <Component Id="Extensions" Guid="{74F4D465-79C4-4E7B-A02F-5D15EC0609C8}" KeyPath="yes">
+              <CreateFolder/>
+            </Component>
+          </Directory>
+
+          <Directory Id="Commands" Name="commands" />
+
+          <Directory Id="License" Name="license" />
+            
+        </Directory>
+      </Directory>
+      <?else?>
+        <Directory Id="ProgramFilesFolder">
+          <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)" >
+            <Directory Id="ReleaseVersion" Name="v7" />
+          </Directory>
+        </Directory>
+      <?endif?>
+    
+		</Directory> <!-- Root Directory -->
+	</Fragment>
+  
+  
+
+  <!-- *** Components *** -->
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+      <ComponentRef Id="PathComponent"/>
+      <ComponentRef Id="LicenseComponent"/>
+		</ComponentGroup>
+    
+    <DirectoryRef Id="Commands">
+      <Component Id="PathComponent" Guid="{E3256CDF-8BC3-4906-B2B3-311BA4F5E009}" KeyPath="yes">
+        <CreateFolder />
+        <Environment Id="PATH" Name="PATH" Value="[Commands]" Permanent="no" Part="last" Action="set" System="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="License">
+      <Component Id="LicenseComponent" Guid="{E2025D14-C890-472D-96F5-88E3F0E5D25B}" KeyPath="yes">
+        <CreateFolder />
+        <Environment Id="LicensePath" Name="LicensePath" Value="[License]" Permanent="no" Part="last" Action="set" System="yes"/>
+      </Component>
+    </DirectoryRef>    
+	</Fragment>
+</Wix>

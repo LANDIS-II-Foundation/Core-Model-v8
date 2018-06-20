@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="RuntimeWinCore">
+            <Directory Id="dir7CF15D756DB6390CCA14586D28AAE637" Name="linux-x64">
+                <Directory Id="dir84F08C8C4E716C364A6FEB48534DCAA6" Name="native">
+                    <Component Id="cmpB3E14FD03B7F458211153F04DC2EB56F" Guid="{AF71371E-DA3F-4A7F-A03B-C9358D191202}">
+                        <File Id="filE2C754F01D2AD7BCF71C6F253991AE99" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\linux-x64\native\gdalconst_wrap.so" />
+                    </Component>
+                    <Component Id="cmp072B67532AFCD46FEB70205167A739FD" Guid="{384AEE0B-A8FD-47BB-BF4B-F6C01FEF5E3C}">
+                        <File Id="filD987FD08706B0B63FE7E6E3150612C30" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\linux-x64\native\gdal_wrap.so" />
+                    </Component>
+                    <Component Id="cmpF669A609C45A8E575D2F86847D9C4DDB" Guid="{3451C9F4-3A72-417A-BC83-EA2F6962AB26}">
+                        <File Id="fil8CA600CC2E4622449D1F9A122E3FB85D" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\linux-x64\native\libgdal.so.20" />
+                    </Component>
+                    <Component Id="cmp3235D69A9D07E6B3418846BD3A125087" Guid="{CC9ED4C7-BD9E-4DC0-B21F-6A42628C5B16}">
+                        <File Id="filDF5E38A4B3EAF5ED6BB561EF0B44CA37" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\linux-x64\native\ogr_wrap.so" />
+                    </Component>
+                    <Component Id="cmp356EFCEFB1F97F3D7BA90B757D679A1A" Guid="{C9B30C56-A422-446C-94F2-5F566FB307DE}">
+                        <File Id="fil5FB483ABCCD23A0F8AF7E9165BF62FF7" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\linux-x64\native\osr_wrap.so" />
+                    </Component>
+                </Directory>
+            </Directory>
+            <Directory Id="dir83D34FB6BA9F248BCB50C4A59198DB7B" Name="unix">
+                <Directory Id="dir62016A127BEB90724FCA505CB86ACAA1" Name="lib">
+                    <Directory Id="dirA92812BC11853134B61B66CAE8B773F9" Name="netcoreapp2.0">
+                        <Component Id="cmpE5A561426AF96954DC0DA835C6F96CDA" Guid="{B15EDBDE-40B3-431B-86DA-4C5FDD754775}">
+                            <File Id="filF1FEAC8862C5A383EC7FA09768F2BCF2" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\unix\lib\netcoreapp2.0\System.Security.Principal.Windows.dll" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="dir24C132A5EA0B33B56B25D29A688AE1D3" Name="win">
+                <Directory Id="dir45C576A386FFCFBEC63C07FC74E514F8" Name="lib">
+                    <Directory Id="dir2F96D1FFAD727CAADBF12F02EF89980D" Name="netcoreapp2.0">
+                        <Component Id="cmpBED48DB6A2625C9C96572F53092D1901" Guid="{B2AB5EA8-E02E-41DB-BF08-C0D887702F5F}">
+                            <File Id="filC93702662186386E335662D5333CB570" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win\lib\netcoreapp2.0\System.Security.AccessControl.dll" />
+                        </Component>
+                        <Component Id="cmpEBA9968DA5CC568585DB95F387A82EF6" Guid="{1EFECC56-F445-4457-B46D-F8BB4CAD00A4}">
+                            <File Id="filBE9966ECEEE1411B75F55F081E33B845" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win\lib\netcoreapp2.0\System.Security.Principal.Windows.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirE6510CF7FD77A0A70EFD60238892E991" Name="netstandard2.0">
+                        <Component Id="cmpED11829D0DF8217962D2BB2A447EC8FC" Guid="{550B6331-2AF2-4C77-BE04-07C00728B7A1}">
+                            <File Id="fil2EE6F7223B8660502B321C32172C7D4E" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="dir60C922968FD5032BFE4B5F4EC382B999" Name="win10-x64">
+                <Directory Id="dir6035B305A9CAB7711F2F6BD56D40CC7B" Name="native">
+                    <Component Id="cmpE6DBBCBA0BC24E693F8A84E4CB51645C" Guid="{6F9415A3-FE0B-420E-8473-DBC2CC95ABAD}">
+                        <File Id="fil19CDE0F52CEBF15EAB25AC6CE04E7697" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win10-x64\native\gdal202.dll" />
+                    </Component>
+                    <Component Id="cmp003D20641819ABDF9503F8DFE05AC5CF" Guid="{51660C5A-0037-411C-928C-CD6A4A43E1A1}">
+                        <File Id="filF71C4F280BBB10D60D3EA9BD9476B90E" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win10-x64\native\gdalconst_wrap.dll" />
+                    </Component>
+                    <Component Id="cmp9BAB5071CDBE258A7E62FA9F2C952A01" Guid="{14FAFA84-15CC-4D25-A007-4C7F2EDAFA9D}">
+                        <File Id="fil5A9C0842DDCA45967CF9D6AD68047853" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win10-x64\native\gdal_wrap.dll" />
+                    </Component>
+                    <Component Id="cmpE50A852DD2D80C54E61F2C73C62C89C0" Guid="{0191C651-E71F-4580-83E5-11760E7050BC}">
+                        <File Id="fil5A8CB2930843290CDE015D8A8B82D645" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win10-x64\native\ogr_wrap.dll" />
+                    </Component>
+                    <Component Id="cmpA472F33DA4AFF1A6384F01E22B3CADEA" Guid="{9AE5C5EB-03CE-42CD-89EE-D7B17526286F}">
+                        <File Id="fil8791C9E1F87B960897848138FD15CD7B" KeyPath="yes" Source="$(var.RuntimeWinCorePath)\win10-x64\native\osr_wrap.dll" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="RuntimeWinCoreComponents">
+            <ComponentRef Id="cmpB3E14FD03B7F458211153F04DC2EB56F" />
+            <ComponentRef Id="cmp072B67532AFCD46FEB70205167A739FD" />
+            <ComponentRef Id="cmpF669A609C45A8E575D2F86847D9C4DDB" />
+            <ComponentRef Id="cmp3235D69A9D07E6B3418846BD3A125087" />
+            <ComponentRef Id="cmp356EFCEFB1F97F3D7BA90B757D679A1A" />
+            <ComponentRef Id="cmpE5A561426AF96954DC0DA835C6F96CDA" />
+            <ComponentRef Id="cmpBED48DB6A2625C9C96572F53092D1901" />
+            <ComponentRef Id="cmpEBA9968DA5CC568585DB95F387A82EF6" />
+            <ComponentRef Id="cmpED11829D0DF8217962D2BB2A447EC8FC" />
+            <ComponentRef Id="cmpE6DBBCBA0BC24E693F8A84E4CB51645C" />
+            <ComponentRef Id="cmp003D20641819ABDF9503F8DFE05AC5CF" />
+            <ComponentRef Id="cmp9BAB5071CDBE258A7E62FA9F2C952A01" />
+            <ComponentRef Id="cmpE50A852DD2D80C54E61F2C73C62C89C0" />
+            <ComponentRef Id="cmpA472F33DA4AFF1A6384F01E22B3CADEA" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

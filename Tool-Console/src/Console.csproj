@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Landis.Console</RootNamespace>
+    <AssemblyName>Landis.Console</AssemblyName>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <ApplicationIcon />
+    <Win32Resource />
+    <Platforms>AnyCPU;x64</Platforms>
+    <!-- Remove netcoreapp2.0 folder-->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Version>7.0.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\build\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Landis.Core" Version="2.0.0" />
+    <PackageReference Include="Landis.Core.Implementation" Version="2.0.0" />
+    <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.0" />
+    <PackageReference Include="Landis.Landscapes" Version="2.0.0" />
+    <PackageReference Include="Landis.RasterIO" Version="2.0.0" />
+    <PackageReference Include="Landis.RasterIO.Gdal" Version="2.0.0" />
+    <PackageReference Include="Landis.SpatialModeling" Version="2.0.0" />
+    <PackageReference Include="Landis.Utilities" Version="2.0.0" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0-rc1" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
+    <PackageReference Include="Troschuetz.Random" Version="4.3.0" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <None Update="Landis.Console.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="extensions.xml">
+      <OutputDirectory>extensions</OutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+   <ItemGroup>
+     <Folder Include="Properties\" />
+   </ItemGroup>
+
+   <ItemGroup>
+     <ProjectReference Include="..\..\Tool-Extension-Admin\src\Extension_Admin.csproj" />
+   </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="License">
+            <Component Id="cmp8E846B997C45D61DE9B1FDF9E1FCA033" Guid="{0E3AEF47-666A-4B18-B287-721022606488}">
+                <File Id="fil8E8159A4B123A77ADAF3022344F9B74C" KeyPath="yes" Source="$(var.LicensePath)\LANDIS-II_Binary_license.rtf" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="LicenseComponents">
+            <ComponentRef Id="cmp8E846B997C45D61DE9B1FDF9E1FCA033" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Console": {
+      "commandName": "Project",
+      "commandLineArgs": "\"scenario_s1e1.txt\"",
+      "workingDirectory": "D:\\CGAProjects\\Rob\\landis_ii_dotnet_fork\\zLandis-ii\\apptest\\examples\\AgeOnly Succesion"
+    }
+  }
+}
