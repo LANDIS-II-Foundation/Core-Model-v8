@@ -204,5 +204,3 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-# LANDIS-II ignore
-build/Release
