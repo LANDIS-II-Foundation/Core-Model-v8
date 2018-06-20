@@ -204,3 +204,6 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+# LANDIS-II Core-Model-v7
+build/Release
+
