@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 
   <!-- Give product a unique Id per platform.  Change when product version changed-->
   <?if $(var.Platform)=x64 ?>
@@ -44,7 +45,7 @@
 		<Feature Id="ProductFeature" Title="LANDIS-II-v7" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
       <ComponentGroupRef Id="LandisComponents"/>
-      <ComponentRef Id="Extensions"/>
+      <ComponentRef Id="Extensions"/> 
       <ComponentGroupRef Id="CommandComponents"/>
       <ComponentGroupRef Id="LicenseComponents"/>
       <!--<ComponentGroupRef Id="RuntimeWinCoreComponents"/>-->
@@ -66,10 +67,12 @@
           
           <Directory Id="Extensions" Name="extensions">
             <Component Id="Extensions" Guid="{74F4D465-79C4-4E7B-A02F-5D15EC0609C8}" KeyPath="yes">
-              <CreateFolder/>
+              <CreateFolder>
+                <util:PermissionEx User="Users" GenericAll="yes"/>
+              </CreateFolder>
             </Component>
           </Directory>
-
+          
           <Directory Id="Commands" Name="commands" />
 
           <Directory Id="License" Name="license" />
