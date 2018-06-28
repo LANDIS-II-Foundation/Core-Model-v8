@@ -34,7 +34,7 @@
     <!-- Include .cab file into .msi file -->
     <MediaTemplate EmbedCab="yes"/>
     
-    <Property Id="ARPURLINFOABOUT">https://sites.google.com/site/landismodel/home</Property>
+    <Property Id="ARPURLINFOABOUT">http://www.landis-ii.org</Property>
 
     <UIRef Id="WixUI_Minimal" />
     <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\license\LANDIS-II_Binary_license.rtf"/>

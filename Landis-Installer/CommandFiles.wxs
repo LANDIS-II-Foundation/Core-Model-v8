@@ -2,10 +2,10 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="Commands">
-            <Component Id="cmp85986758FADEB24C2F6AA33E87A5B7C5" Guid="{6A8ECB4B-2A66-4DFF-8D39-0CE3C2A3FADA}">
+            <Component Id="cmp85986758FADEB24C2F6AA33E87A5B7C5" Guid="{D8111F89-C3A1-40A2-9CB8-456B26E3F2EE}">
                 <File Id="fil7682CAD1EC6A221BB63E9F5FD07B228D" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-extensions.cmd" />
             </Component>
-            <Component Id="cmpE08513196DE4B9A52B6A9B048CD25CCC" Guid="{67DB0A70-71F5-4A58-8C1C-02BE7E09289B}">
+            <Component Id="cmpE08513196DE4B9A52B6A9B048CD25CCC" Guid="{335B4781-CA1B-4AA2-8F7B-C47F27EA78A2}">
                 <File Id="filFB181F6E12ED2F467D145B776DE26470" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii.cmd" />
             </Component>
         </DirectoryRef>
