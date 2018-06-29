@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+
+  <String Id="Company">LANDIS-II Foundation</String>
+
+  <String Id="ProductNameFolder">LANDIS-II-v7</String>
+
+  <String Id="LandisIIv7_x64">LANDIS-II-v7 (64 bit)</String>
+
+  <String Id="Description">LANDIS-II .NET Standard 2.0</String>
+  <String Id="Comments">Only installed on Windows 10 since GDAL doesn't support .NET Core for older Windows OS.</String>
+
+  <String Id="Language">1033</String>
+
+  <String Id="DowngradeErrorMessage">A newer version of LANDIS-II-v7 is already installed.</String>
+  
+</WixLocalization>

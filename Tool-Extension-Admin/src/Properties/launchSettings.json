@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Extension_Admin": {
+      "commandName": "Project",
+      "commandLineArgs": "\"list\"",
+      "workingDirectory": "D:\\CGAProjects\\Rob\\LANDIS_FINAL\\Core-Model-v7\\Tool-Extension-Admin\\Extension-Age-Only-Succession"
+    }
+  }
+}
