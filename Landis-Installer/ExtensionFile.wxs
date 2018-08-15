@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="Extensions">
+            <Component Id="cmp0B7F02ABF91BE5891CDC4796F46DDBAC" Guid="{04B3CC1E-F680-4AAC-BC09-2E0D83710FDA}">
+                <File Id="fil8F91EB10AF99A7CF4F07568A222584A4" KeyPath="yes" Source="$(var.ExtensionPath)\extensions.xml" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ExtensionComponents">
+            <ComponentRef Id="cmp0B7F02ABF91BE5891CDC4796F46DDBAC" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
