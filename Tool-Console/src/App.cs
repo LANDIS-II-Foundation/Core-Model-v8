@@ -12,7 +12,7 @@ using Landis.RasterIO.Gdal;
 using Landis.SpatialModeling;
 
 
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+//[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 
 namespace Landis
@@ -26,8 +26,17 @@ namespace Landis
                 // The log4net section in the application's configuration file
                 // requires the environment variable WORKING_DIR be set to the
                 // current working directory.
-                Environment.SetEnvironmentVariable("WORKING_DIR", Environment.CurrentDirectory);
+                //Environment.SetEnvironmentVariable("WORKING_DIR", Environment.CurrentDirectory);
                 //log4net.Config.XmlConfigurator.Configure();
+
+                log4net.GlobalContext.Properties["LogPath"] = string.Format("{0}{1}",                                  
+                                                                            Environment.CurrentDirectory,
+                                                                            Path.DirectorySeparatorChar);
+                var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+                log4net.Config.XmlConfigurator.Configure(logRepository,
+                                                         new FileInfo(string.Format("{0}{1}",
+                                                                                    AppDomain.CurrentDomain.BaseDirectory,
+                                                                                    "Landis.Console.dll.config")));
 
                 ConsoleInterface ci = new ConsoleInterface();
 

@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Landis.Extensions;
 
 namespace Landis.Extensions.Admin
 {
