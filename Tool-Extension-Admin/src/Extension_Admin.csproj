@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="Landis.Core" Version="2.0.0" />
-    <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.0" />
+    <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.0.1" />
     <PackageReference Include="Landis.SpatialModeling" Version="2.0.0" />
     <PackageReference Include="Landis.Utilities" Version="2.0.0" />
     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
@@ -32,6 +32,10 @@
     <None Update="Landis.Extensions.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
