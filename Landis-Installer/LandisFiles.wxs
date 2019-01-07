@@ -2,128 +2,773 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="ReleaseVersion">
-            <Component Id="cmpE2D4AE701AD15E22F02D77708DB56970" Guid="{273CEDED-0DE1-4FCF-BAE8-938F0FF4A73F}">
-                <File Id="filE4166E7A6630A523852FB77D6276E6B4" KeyPath="yes" Source="$(var.BasePath)\Gdal.Core.dll" />
+            <Component Id="cmpF64040639FACE02C3D37EE79894D2894" Guid="{6113F7F8-3AF8-4D27-988D-D619EE35252D}">
+                <File Id="fil87EFA5786897C192CD6506B0EC4D9684" KeyPath="yes" Source="$(var.BasePath)\cairo.dll" />
             </Component>
-            <Component Id="cmpEDB3F9C1A64F5B7FD0DE3AE9D19AC027" Guid="{73E2778A-6AF0-4DF3-9CE9-986E9E584D31}">
+            <Component Id="cmpB8DFF0CB94190268B461ABE80BA776B0" Guid="{7A8910CF-9450-4C8F-AF7E-3F2A50180700}">
+                <File Id="fil4E3BA4B44A535AF73BD705B9D864BB20" KeyPath="yes" Source="$(var.BasePath)\expat.dll" />
+            </Component>
+            <Component Id="cmpA8E36B197568345781BE3BD9CBBED4C7" Guid="{476A691A-7AF1-4E98-B79F-CD74A9045DDB}">
+                <File Id="fil4D7053774D5C4DB37872DDC60D07EB58" KeyPath="yes" Source="$(var.BasePath)\freexl.dll" />
+            </Component>
+            <Component Id="cmp9633266E274DDF1F0C416A70BB31C82B" Guid="{923CE343-3F88-4EC5-88C1-940ACE325C41}">
+                <File Id="fil3841CE89A367FC9F59CD6C56E932FA11" KeyPath="yes" Source="$(var.BasePath)\fribidi.dll" />
+            </Component>
+            <Component Id="cmpBB5CDCB0CDE9C6F86345AC0E4DC2C451" Guid="{F046B60A-496F-48F3-95BF-FE6F7E254125}">
+                <File Id="fil8E609864718459CE298FA57EB569E78D" KeyPath="yes" Source="$(var.BasePath)\gdal203.dll" />
+            </Component>
+            <Component Id="cmpAB653323063B2AD94EDA2A28FEFB4939" Guid="{F949C45B-E988-4E10-82B0-EBC170C3564E}">
+                <File Id="fil0F25E687AAE05DC262A56656A1941FB2" KeyPath="yes" Source="$(var.BasePath)\gdalconst_csharp.dll" />
+            </Component>
+            <Component Id="cmp8240A40D64760E44D2D55E515C26ABF2" Guid="{BD4641AB-330F-4A47-BD36-B3C2C81DC3CE}">
+                <File Id="fil65740CB05C00E5653AB82AB408CE6D43" KeyPath="yes" Source="$(var.BasePath)\gdalconst_wrap.dll" />
+            </Component>
+            <Component Id="cmpD6DAB10B9A345AEA9B7677B89F31669E" Guid="{EE927804-3076-44D2-B43C-E1E10C4EE184}">
+                <File Id="fil41ACC9A180DF253F5FAE04D095CA4FD3" KeyPath="yes" Source="$(var.BasePath)\gdal_csharp.dll" />
+            </Component>
+            <Component Id="cmp66587AEB762727A481263ED23B44DAD9" Guid="{25C9EA52-70EE-41EA-90F9-7A2386AE585E}">
+                <File Id="fil40C0509F5E18E7B05B2C0741443DC008" KeyPath="yes" Source="$(var.BasePath)\gdal_wrap.dll" />
+            </Component>
+            <Component Id="cmpB44CE94A02DAC256C6077858F4CBA54B" Guid="{0BB5AC4C-0C2E-4DC7-8C85-CECC7D2B7A79}">
+                <File Id="fil9C3B61D82AD391EF5CEFFA5973D7F222" KeyPath="yes" Source="$(var.BasePath)\geos.dll" />
+            </Component>
+            <Component Id="cmp48DEE89D1EF7A96A313538720B1778FC" Guid="{B5022B02-3764-4E68-914C-94EBC97E406F}">
+                <File Id="fil0DE7382529495D78FB0A2FD03927E06E" KeyPath="yes" Source="$(var.BasePath)\geos_c.dll" />
+            </Component>
+            <Component Id="cmpA5E5F0C085F85BB32FE796C101C31DF6" Guid="{98CAE442-547D-4292-943F-548D21FB70DE}">
+                <File Id="fil6225312F8D42A577DBA0E3C90978C6D0" KeyPath="yes" Source="$(var.BasePath)\iconv.dll" />
+            </Component>
+            <Component Id="cmpEDB3F9C1A64F5B7FD0DE3AE9D19AC027" Guid="{B0CD18D1-A792-4BED-9B6B-EFC644CD8D12}">
                 <File Id="fil2ABACE64AE92E5F59914A94AC5E1BB99" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.deps.json" />
             </Component>
-            <Component Id="cmp87A073CC84CBAB461611ED033F7B4467" Guid="{24A20974-21F2-4F70-A4D9-6CBD7D122AC2}">
+            <Component Id="cmp87A073CC84CBAB461611ED033F7B4467" Guid="{B6D312D0-59CA-4B4E-8D4C-AB03B7915685}">
                 <File Id="fil1C8691D5EE129F0EA819828FEB5E4F45" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.dll" />
             </Component>
-            <Component Id="cmp41085EAC789E795CEF559F7DA49C8053" Guid="{2EF9FB73-0607-4923-9ECE-3D3C8B813279}">
+            <Component Id="cmp41085EAC789E795CEF559F7DA49C8053" Guid="{42AA41AC-9CD3-48D2-A219-08DE43180234}">
                 <File Id="fil42AF83ACD526392C4B54E90C445342C1" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.dll.config" />
             </Component>
-            <Component Id="cmpDE9A31BDED7E92029CFEB5D9D0C9345B" Guid="{F61DCA95-9FF7-4F15-ABB5-5DE91EA31D75}">
+            <Component Id="cmpDE9A31BDED7E92029CFEB5D9D0C9345B" Guid="{BB8340CB-CC83-4B0D-8C2A-908712A96FB3}">
                 <File Id="fil97278DCF8A851692D71026268E944250" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.pdb" />
             </Component>
-            <Component Id="cmpDF50F11C7E861BEA05CFDE3CF928448A" Guid="{C6A5072D-BBE3-42E5-84F0-C2F8364E1175}">
+            <Component Id="cmpDF50F11C7E861BEA05CFDE3CF928448A" Guid="{40D10199-B514-4F98-B77B-BF82546B54D5}">
                 <File Id="fil003EC95C7AB2EC4B9D4C2C4D252B0F53" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.runtimeconfig.json" />
             </Component>
-            <Component Id="cmp91F944E44F62F0719FF4D4A8208295BE" Guid="{A61C8285-4C8C-4A5A-9B14-3EEEF3C6E8E8}">
+            <Component Id="cmp91F944E44F62F0719FF4D4A8208295BE" Guid="{8C28531B-71D9-4F31-B2EC-BFF5678CA770}">
                 <File Id="filF20CF2AB3DD9A19992FB501155B4BC11" KeyPath="yes" Source="$(var.BasePath)\Landis.Core.dll" />
             </Component>
-            <Component Id="cmpBA5DAD12104931F017E75D8671B0AE9B" Guid="{6AF0CC5F-C798-4EFD-BF68-2BFE673AFF30}">
+            <Component Id="cmpBA5DAD12104931F017E75D8671B0AE9B" Guid="{9F200E52-A797-4638-A0EB-D3C63DA04738}">
                 <File Id="fil199C1420C7CDD436ECA1B7A8E2E1EDD8" KeyPath="yes" Source="$(var.BasePath)\Landis.Core.Implementation.dll" />
             </Component>
-            <Component Id="cmpEC0C20EEB9C38D42E996B8C561CCEC92" Guid="{38AE2370-D711-459F-A1B1-B677CEF0A72A}">
+            <Component Id="cmpEC0C20EEB9C38D42E996B8C561CCEC92" Guid="{E6D42935-E5B2-416B-9D3A-DBBF56C1FD3B}">
                 <File Id="fil76819F669CCDF5C5DEE2C141773D5464" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.Dataset.dll" />
             </Component>
-            <Component Id="cmpA7120537CA39F51D7191F8729962304B" Guid="{E9FD005C-D455-437C-9737-260FFACFA859}">
+            <Component Id="cmpA7120537CA39F51D7191F8729962304B" Guid="{870F4699-563A-4A95-9FAD-E7695B853A2E}">
                 <File Id="filEC7A75099C7BE294DDFB83EDE62860B4" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.deps.json" />
             </Component>
-            <Component Id="cmp0A12279277A8F7A109ADE90BA3388035" Guid="{A5924847-5B29-4E7F-B6FF-E5CC9D9E5FAF}">
+            <Component Id="cmp0A12279277A8F7A109ADE90BA3388035" Guid="{12D5049E-01CE-4354-8DAF-F8467853B2EA}">
                 <File Id="fil8AF4B5121B53ACD6794F9C9FCE193DE3" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.dll" />
             </Component>
-            <Component Id="cmp12837AC92AF80310174EBAD248A9E13D" Guid="{7FA1AC97-CA5D-476D-8589-207CC34967E0}">
+            <Component Id="cmp12837AC92AF80310174EBAD248A9E13D" Guid="{B059606A-3DE3-4964-9432-938601261257}">
                 <File Id="filE7394F5DF4C412F28EC62F8697F5274B" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.dll.config" />
             </Component>
-            <Component Id="cmpDF83866667ADEAED4FAF421DE39884DC" Guid="{D955D810-2272-4B4E-B4C8-A18A02E194D6}">
+            <Component Id="cmpDF83866667ADEAED4FAF421DE39884DC" Guid="{7E5E9F24-35A1-4006-85E4-5919B3AF3462}">
                 <File Id="fil2459ABBA695E815F81661CD5E024FCF7" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.pdb" />
             </Component>
-            <Component Id="cmp1DF9CF7E56BBD9B4CF7B908B4A5214E1" Guid="{E4826FE7-1A78-4C01-A75A-61647F5A8CF8}">
+            <Component Id="cmp1DF9CF7E56BBD9B4CF7B908B4A5214E1" Guid="{18419911-213B-4555-9430-01BF4E5C78B8}">
                 <File Id="fil95C213368F47BD71FAC32C8810E8CDBA" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.runtimeconfig.dev.json" />
             </Component>
-            <Component Id="cmp49104FDD8DC282BC35B7E44203C23838" Guid="{48AD4799-A85A-4C59-8B6F-2D26386D90B2}">
+            <Component Id="cmp49104FDD8DC282BC35B7E44203C23838" Guid="{C127156A-B228-4852-9610-461BF327A4D8}">
                 <File Id="fil3BB670F2D24DFA3AD77776619F23291A" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.runtimeconfig.json" />
             </Component>
-            <Component Id="cmp1A22628124A07783CFC4597CC9435D8F" Guid="{04E9F2D3-A220-4409-9AE3-5FA9C7EF495A}">
+            <Component Id="cmp1A22628124A07783CFC4597CC9435D8F" Guid="{DE8B85BD-1668-48FE-B47B-D2BC73CAA5CE}">
                 <File Id="fil44EC49CC8F716B9711C12EC81CD2AA9D" KeyPath="yes" Source="$(var.BasePath)\Landis.Landscapes.dll" />
             </Component>
-            <Component Id="cmpE33F8643D85CDF136BFC567350C7F06A" Guid="{B3FAD366-9379-44FE-8509-9D517A87264C}">
+            <Component Id="cmpE33F8643D85CDF136BFC567350C7F06A" Guid="{8D55D6C5-9629-434A-B626-7AB40AC0712E}">
                 <File Id="filF48AE44729D8BAB5478BA47C697B35B2" KeyPath="yes" Source="$(var.BasePath)\Landis.RasterIO.dll" />
             </Component>
-            <Component Id="cmp28F0C0752A0D42A20E2495477BE8C8A7" Guid="{2BCE33EA-E4F4-46DD-93B5-C91382E99794}">
+            <Component Id="cmp28F0C0752A0D42A20E2495477BE8C8A7" Guid="{6A99AF6B-DC9A-430A-B726-608D8ED4316B}">
                 <File Id="fil0908128FAE4FEB0D0F9670CD8E77EF88" KeyPath="yes" Source="$(var.BasePath)\Landis.RasterIO.Gdal.dll" />
             </Component>
-            <Component Id="cmpBA4F9B20A294C0CA8C7B331CE8AED5A2" Guid="{D660243D-B576-4FC2-A559-A4F238AD96AA}">
+            <Component Id="cmpBA4F9B20A294C0CA8C7B331CE8AED5A2" Guid="{A844CBC5-7CBA-47DD-BFB5-B009FB8CA252}">
                 <File Id="fil5669C7E16FB37A028D563F8A48B13C91" KeyPath="yes" Source="$(var.BasePath)\Landis.SpatialModeling.dll" />
             </Component>
-            <Component Id="cmpDDBA1FB6EFD311B8A1ED97D16DD79977" Guid="{2E095FE1-7D74-45EA-8E57-A198E63558CA}">
+            <Component Id="cmpDDBA1FB6EFD311B8A1ED97D16DD79977" Guid="{D2BA011C-3422-4999-830F-C59CB03006D2}">
                 <File Id="fil12D4BB70BB88D1A103F6276852B5C358" KeyPath="yes" Source="$(var.BasePath)\Landis.Utilities.dll" />
             </Component>
-            <Component Id="cmp447952268F4EE3879A059BE0A129D2B8" Guid="{610D80B5-E4D4-40EF-A4E3-12381572177D}">
+            <Component Id="cmpFEBFA300471B7AF08B2EDFCF46BC9AB3" Guid="{DA9B0797-83D6-491A-A0F0-080BF6869C9F}">
+                <File Id="filF1C4E7B8E15ECF71FC0E03A0BA135C49" KeyPath="yes" Source="$(var.BasePath)\libcurl.dll" />
+            </Component>
+            <Component Id="cmp70F162DF4167AE81CDA6A2A62FE4BC30" Guid="{59C87C71-4679-4E94-B45D-D9FEE989B7E9}">
+                <File Id="fil872ED0A8201069F28DF9094DE0FC1638" KeyPath="yes" Source="$(var.BasePath)\libeay32.dll" />
+            </Component>
+            <Component Id="cmp31DB516F069F692DC3529638EF77058A" Guid="{4F368C83-7AB2-4CD6-B0E3-05C534E9E18C}">
+                <File Id="filB6E720E0D828B903B32FEF2620031AB5" KeyPath="yes" Source="$(var.BasePath)\libecwj2.dll" />
+            </Component>
+            <Component Id="cmp0793F949DC649B61CCBAFE53A7E90D4E" Guid="{C52D7C49-4CAA-49A0-9FC8-CB066519C7F7}">
+                <File Id="fil377EB35BC587811A8F8890F03E7F63F5" KeyPath="yes" Source="$(var.BasePath)\libfcgi.dll" />
+            </Component>
+            <Component Id="cmp397B937A4DD68833C747A1E0724CD5ED" Guid="{74C03A25-FF61-4E70-96CB-4BDE22061EE1}">
+                <File Id="fil9814B38275F2B681350FEDCEA08CFD6E" KeyPath="yes" Source="$(var.BasePath)\libkea.dll" />
+            </Component>
+            <Component Id="cmp8190295630CCDB4AED08CDE9D9E05208" Guid="{7D2D7358-1750-4C3B-A1C8-2F95EAF774C3}">
+                <File Id="fil92BAEEC52B9C63F59ED69D9242936E32" KeyPath="yes" Source="$(var.BasePath)\libmysql.dll" />
+            </Component>
+            <Component Id="cmpC0A5DABEDD4F84FC7DC96B3DD48E22C7" Guid="{13E6505F-926B-458C-B20B-51E12F44FE49}">
+                <File Id="fil44C2DA7204F06784AAF1444A92D2B222" KeyPath="yes" Source="$(var.BasePath)\libpq.dll" />
+            </Component>
+            <Component Id="cmpCB14AB51E5ADD5830C4D9BB84430962C" Guid="{BAE4357F-4A0E-4D1E-A02F-EE3CC6737C2C}">
+                <File Id="fil019D433A6EE9F565656E9C987664C25D" KeyPath="yes" Source="$(var.BasePath)\libtiff.dll" />
+            </Component>
+            <Component Id="cmpDDD8AB00D55A5CB3775FDD1C7EC98470" Guid="{DF5C204B-8A2A-4317-9E30-24C0D99585D5}">
+                <File Id="filD751D0C023E5E07017CC802FF93AE8C5" KeyPath="yes" Source="$(var.BasePath)\libxml2.dll" />
+            </Component>
+            <Component Id="cmp447952268F4EE3879A059BE0A129D2B8" Guid="{8785B6EE-7EA1-4DF4-8D6E-7E66A9428D0C}">
                 <File Id="fil08312437C5D45F9E0EF0D639254A2B11" KeyPath="yes" Source="$(var.BasePath)\log4net.dll" />
             </Component>
-            <Component Id="cmpB89425A741FC005084B887C2C63F1CAF" Guid="{90F20FDC-F1D7-487D-8CE0-D84A99EF403B}">
+            <Component Id="cmp9AC8A9599C6836569275E872F349D844" Guid="{A7678C34-63A0-497E-83B4-BCD4CF983F0F}">
+                <File Id="fil814EEFD4C2AF375270EE523B1EB5D467" KeyPath="yes" Source="$(var.BasePath)\msvcp140.dll" />
+            </Component>
+            <Component Id="cmpD1ABE1EE7572C8D86904D94E3C65ED75" Guid="{F788FC85-FF62-49E0-8583-5EFF9C39BAF9}">
+                <File Id="filAF5CA44572EE87D4DBD7D6FA715A2568" KeyPath="yes" Source="$(var.BasePath)\ogr_csharp.dll" />
+            </Component>
+            <Component Id="cmp81575E23654988E0B7907DE37B3E8408" Guid="{5660149F-6778-42B6-BEED-2C3B222DFACA}">
+                <File Id="fil74B30035E8F5DA3CE85D2AEA6B58D20D" KeyPath="yes" Source="$(var.BasePath)\ogr_wrap.dll" />
+            </Component>
+            <Component Id="cmp8FD9F2458308432D40E0C97E9223B017" Guid="{2713726A-620D-47BE-9A65-8D45F5472895}">
+                <File Id="fil7D7D90C448F95B17CE1800B15B225404" KeyPath="yes" Source="$(var.BasePath)\openjp2.dll" />
+            </Component>
+            <Component Id="cmp8C5AF600047B73E6D79C5B2730A4448F" Guid="{CC7E9AAD-6840-4F99-8B28-FE4B6758D5F5}">
+                <File Id="fil4E3AF19AE53EAEA36D1AF4596C7D6B7F" KeyPath="yes" Source="$(var.BasePath)\osr_csharp.dll" />
+            </Component>
+            <Component Id="cmp9481FCCCDCAEC63C6B7CF177E0BEDB24" Guid="{56F7BCCD-46A7-427B-8A99-F707FE1255CE}">
+                <File Id="fil681645893434560F6FAEDB01E1C4279D" KeyPath="yes" Source="$(var.BasePath)\osr_wrap.dll" />
+            </Component>
+            <Component Id="cmpF670052D2D4DAF6BF7412DE7DAE13CC3" Guid="{F01989BF-6E35-432E-B797-8A0341E677A1}">
+                <File Id="fil4670CAAFBDDADAB0E44E4D5BDA6DBCE1" KeyPath="yes" Source="$(var.BasePath)\proj.dll" />
+            </Component>
+            <Component Id="cmp69AFDFD5BC87F20BA9D5354986363B5B" Guid="{52D060A0-4EFD-46AB-BC0E-E6E66E6FD6DD}">
+                <File Id="fil98C382C720E510CCF874D87B95BD6CE4" KeyPath="yes" Source="$(var.BasePath)\spatialite.dll" />
+            </Component>
+            <Component Id="cmp6978A0C243603DD9DE988E39CA473D85" Guid="{074E2613-3428-4B29-BDC6-1408939594E5}">
+                <File Id="fil5CF447BA5AEC913A0A2A9D1E31B5E2AD" KeyPath="yes" Source="$(var.BasePath)\sqlite3.dll" />
+            </Component>
+            <Component Id="cmp6237430846938D8D711D109C652194AC" Guid="{D8A131D2-42F4-4B47-8DEF-16A5837ED4EC}">
+                <File Id="fil33872ABB2C2950057339CEB3B5CE908D" KeyPath="yes" Source="$(var.BasePath)\ssleay32.dll" />
+            </Component>
+            <Component Id="cmpB89425A741FC005084B887C2C63F1CAF" Guid="{192E94C2-7AA6-4EB8-9028-C0C7C681EA68}">
                 <File Id="fil2AE30EA814CAF380CDCEC95CD77B9769" KeyPath="yes" Source="$(var.BasePath)\System.Configuration.ConfigurationManager.dll" />
             </Component>
-            <Component Id="cmpE427769B92CF4AA8E8BF2C1CA54FAFF5" Guid="{23F7DCD8-1046-497A-9488-998EEAE6FAC5}">
+            <Component Id="cmpE427769B92CF4AA8E8BF2C1CA54FAFF5" Guid="{A8DFB91A-49EE-4321-8391-E9C823DE352C}">
                 <File Id="fil6D1E8801664F78F0EEA19296FC1AD454" KeyPath="yes" Source="$(var.BasePath)\System.Memory.dll" />
             </Component>
-            <Component Id="cmpCED27DB12DFD0F071D85B176C6928701" Guid="{5C781E5E-790C-479C-B649-DF7EF27E4141}">
+            <Component Id="cmpCED27DB12DFD0F071D85B176C6928701" Guid="{B17C77EA-ED5E-4A9E-8327-22A56ED5ED6B}">
                 <File Id="fil8498F08EE7CF5CE55E3FFE81A7DFC2BB" KeyPath="yes" Source="$(var.BasePath)\System.Runtime.CompilerServices.Unsafe.dll" />
             </Component>
-            <Component Id="cmp79AAB7DE2D737B2DAD361A441A801E04" Guid="{16E94DFD-9588-4CA6-981B-332836E128E2}">
+            <Component Id="cmp79AAB7DE2D737B2DAD361A441A801E04" Guid="{83E87705-CE77-4BC4-ABFC-9C056F97FECE}">
                 <File Id="filAD83B964CB0B980CE5F7FDB75489EC57" KeyPath="yes" Source="$(var.BasePath)\System.Security.AccessControl.dll" />
             </Component>
-            <Component Id="cmp5A020079B01379C4DFBAFBC026A155EF" Guid="{AD852097-F587-49E6-9808-08C27FB2507A}">
+            <Component Id="cmp5A020079B01379C4DFBAFBC026A155EF" Guid="{BF6A118C-0540-47BB-8392-691E555D8972}">
                 <File Id="fil310AEA41E1A040A759E87A46AB121667" KeyPath="yes" Source="$(var.BasePath)\System.Security.Cryptography.ProtectedData.dll" />
             </Component>
-            <Component Id="cmp698428C936284B14FA1D9370E2F3339E" Guid="{8DA4CFF1-3ED5-4F87-A9AD-DF32ABE4FA37}">
+            <Component Id="cmp698428C936284B14FA1D9370E2F3339E" Guid="{A1EE2210-E3BB-449D-B35A-13B9EE40306A}">
                 <File Id="fil1288CE9EF85506869A1187D0CFB50096" KeyPath="yes" Source="$(var.BasePath)\System.Security.Permissions.dll" />
             </Component>
-            <Component Id="cmp78B52BB1190830845A2750858D4093B5" Guid="{567D71D0-AAED-49FA-8647-54F292E31360}">
+            <Component Id="cmp78B52BB1190830845A2750858D4093B5" Guid="{F68DD989-8A20-49A4-AA3B-32C58156F84F}">
                 <File Id="fil8F1FE37822E1E26274DD72C1CAFF4A59" KeyPath="yes" Source="$(var.BasePath)\System.Security.Principal.Windows.dll" />
             </Component>
-            <Component Id="cmp37F9E7A0E1FA144F356DC052C56B4946" Guid="{BF9C00BF-7D6B-42F2-BB0D-9AB07758C752}">
+            <Component Id="cmpE7E0BA6007AED1A575EE09B85A934A55" Guid="{2C645A49-4063-4D4C-9D67-60B3DC67A4F3}">
+                <File Id="filDAB6BB81DD617BB98BB9E7068CBE9C13" KeyPath="yes" Source="$(var.BasePath)\tiff.dll" />
+            </Component>
+            <Component Id="cmp3FD39D38A6224B10F34E137ADDBDCE63" Guid="{07A7E265-4B4E-46A6-A117-3897FC199BC7}">
+                <File Id="fil25EF7C3B91403C3871DB48AA87EFA489" KeyPath="yes" Source="$(var.BasePath)\tiffxx.dll" />
+            </Component>
+            <Component Id="cmp37F9E7A0E1FA144F356DC052C56B4946" Guid="{47C3F9B7-ABEE-45A5-A3DF-3E3831C0565C}">
                 <File Id="fil6EECCDA0A5ACC440FE6968F0DD761CD2" KeyPath="yes" Source="$(var.BasePath)\Troschuetz.Random.dll" />
             </Component>
+            <Component Id="cmp4397D137DEA1CD6F6BD1BC6B7DBD3230" Guid="{3D982C58-44D9-4C89-BDD5-65A4FC6F75C9}">
+                <File Id="filCF26A28FD3C109E4FE3678A95CC93A33" KeyPath="yes" Source="$(var.BasePath)\vcruntime140.dll" />
+            </Component>
+            <Component Id="cmp57B45A13E7398FB85DD87F865C8BC5CF" Guid="{C3660C38-7ADE-4724-B131-59842AAFD639}">
+                <File Id="fil52CC4564B86488D004E22336D451FC71" KeyPath="yes" Source="$(var.BasePath)\xerces-c_3_2.dll" />
+            </Component>
+            <Component Id="cmp052A5784F00434958DDF8A019E83CA93" Guid="{BD365B7D-A8A2-41CA-9DD6-48CB1ED9C58D}">
+                <File Id="filC850C3938D9641083F7CAE3B2A6D75A9" KeyPath="yes" Source="$(var.BasePath)\zlib1.dll" />
+            </Component>
             <Directory Id="dirAFCF1D7F17EA451AA4F52311F9BC543F" Name="runtimes">
+                <Directory Id="dir7FE004798FFF0B29BCAEBC0A211C1145" Name="gdal">
+                    <Component Id="cmpE65195071C60D5B9D8B1F8E6D3AE78AB" Guid="{85A37DF3-E7B0-4D66-95E2-EA9BCD050013}">
+                        <File Id="fil2042032F8346F68AC804B0D89211FBB1" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\GDALLicense.rtf" />
+                    </Component>
+                    <Component Id="cmp9BDB1E7DA240C8DF939814F5A3F23DAD" Guid="{E73A92E8-8733-4CB1-844D-13E13373210A}">
+                        <File Id="filA4F500F808F27AF728211CD7CDFDE053" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\GISInternalsLicense.rtf" />
+                    </Component>
+                    <Component Id="cmpC186453AE6DAB98C875D6417E7FD5290" Guid="{0DADD135-C6EA-4173-BB82-1E0C71987CC4}">
+                        <File Id="fil7B78DBA687BE1A675569FFC9CB87224E" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\license.txt" />
+                    </Component>
+                    <Directory Id="dirF33B9BDB07DB94FFA06E010D25BDD40E" Name="data">
+                        <Component Id="cmpB320C06BB6C3000D5A1C7D5DE62C0824" Guid="{45C5446C-A16A-4B9E-B855-518E9DBA9FB5}">
+                            <File Id="fil63F3E1D5CA71AB1A042D7C9A1516F2EE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\compdcs.csv" />
+                        </Component>
+                        <Component Id="cmpA88B51BF42AB5A5E498C4F117DB011E3" Guid="{851D2B1F-A874-4457-B847-B128352509AB}">
+                            <File Id="fil67CFB41F58F69C356B88A4BC81B0DDD3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\coordinate_axis.csv" />
+                        </Component>
+                        <Component Id="cmpFEF27CD99EC9EB7F273416150D8C6F92" Guid="{FA53C7C1-0420-430C-B7CB-E335A630B640}">
+                            <File Id="fil191F2BB33FCA47CFC15ACCAF658C8D6D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\cubewerx_extra.wkt" />
+                        </Component>
+                        <Component Id="cmp12C0C3607ABD33688BDD6D611E0C8C31" Guid="{6F815856-2DEC-4CB9-B0F2-88B918B51A57}">
+                            <File Id="filFDB7C774851890ACC0C3F07FB0890E79" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\datum_shift.csv" />
+                        </Component>
+                        <Component Id="cmp6D9FB99544AB30D83CAE5E24EE4542FA" Guid="{4CAE47F6-F298-4164-A606-0223940955B4}">
+                            <File Id="fil6E19831EADA3C180A4E907FF6D4925E2" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\default.rsc" />
+                        </Component>
+                        <Component Id="cmp5C95033E39CB50EEF10F42BBDCC6672A" Guid="{09AE13E2-CCEE-459E-8B4C-6089A082E213}">
+                            <File Id="filD951DFE1E2FC2A8B9AFA02D4FE67F9B0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ecw_cs.wkt" />
+                        </Component>
+                        <Component Id="cmpE77FA0A59FE0674839AE510EC4A994CF" Guid="{736ACF44-301F-4E10-A557-505E1081C047}">
+                            <File Id="filA7A942B206A48F67CD9F120A2BB014F9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ellipsoid.csv" />
+                        </Component>
+                        <Component Id="cmpD17C7CBD7A935069D5C65CE17BB0FBF9" Guid="{AEBDF57C-112A-4CA6-AE69-B1A2F6B50B8E}">
+                            <File Id="fil87B4ABC89A6BABC8BFE4103CCA36CE70" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\epsg.wkt" />
+                        </Component>
+                        <Component Id="cmp50F1F943FA9FFDCA52EB11F572708628" Guid="{D81BCCA2-22BB-429F-A16F-A1ACFA505909}">
+                            <File Id="fil1AF39C1FB93F85822E59AFD9726901A9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\esri_epsg.wkt" />
+                        </Component>
+                        <Component Id="cmpA15A7A56148FAB55248B87B74BAD3CD7" Guid="{935C6F31-FA87-497C-9D0E-E53B3FA46690}">
+                            <File Id="fil56EF7DEBE297CC7899C7002C3A180E61" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\esri_extra.wkt" />
+                        </Component>
+                        <Component Id="cmp0C26ADF7E0D221C704A184851140209B" Guid="{32428B22-5B61-4282-85A4-D6E16FB24836}">
+                            <File Id="fil3C92F3820B4EB9832F61435D25DEB46E" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\esri_StatePlane_extra.wkt" />
+                        </Component>
+                        <Component Id="cmpD25B5CC0AFC739A393DCC2003369EFAE" Guid="{3B6C99C9-5F03-45DD-A0AB-987B5982246F}">
+                            <File Id="fil21A6A0CE1E77B1BD7CE5FAA122D5A7D3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\esri_Wisconsin_extra.wkt" />
+                        </Component>
+                        <Component Id="cmpDF55E20A9AA9891D4F8D90E343ED3C6D" Guid="{FC342754-6738-46AF-9F7D-FDA9855ABB15}">
+                            <File Id="filE926072CB4D18F68A67472A98966BFFB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gcs.csv" />
+                        </Component>
+                        <Component Id="cmp7B39DA301DA92AA3686522CD15947AD7" Guid="{D3825F89-6351-46A9-BF68-75D365A7802A}">
+                            <File Id="filAE20CD3FC05BCB2CD1B073AF699C07E2" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gcs.override.csv" />
+                        </Component>
+                        <Component Id="cmp10357F0C60E89E938754D5A3591B2DA0" Guid="{9871B6A6-1B8F-4EE7-B7E4-7E901CCDCE86}">
+                            <File Id="filD6B525EAEE3DC22916ABDCA6C1F27E17" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gdalicon.png" />
+                        </Component>
+                        <Component Id="cmp7126A5F78308578F32B61C63C0034F7B" Guid="{83B13220-552A-4B97-9B52-A49E9DF08AE9}">
+                            <File Id="fil54FBBCEB190508C73A18B8A32BF98828" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\GDALLogoBW.svg" />
+                        </Component>
+                        <Component Id="cmpD371BC547F53D9D64AADD8AD1B5BED9E" Guid="{34C8ED26-48B4-4B2C-AF64-13049DA9566B}">
+                            <File Id="filCD8CFC64C7B78307E9AFFD51EE91C11F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\GDALLogoColor.svg" />
+                        </Component>
+                        <Component Id="cmp4F3F663A1A6035609189EC7934583CB6" Guid="{38A93FB4-8E3A-428E-A4BD-9F95ABF2CE8C}">
+                            <File Id="fil70C46BB59D08BF15A740E8A5199E1C3D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\GDALLogoGS.svg" />
+                        </Component>
+                        <Component Id="cmp1D689E6B2A43DD064FAC43375DD68FE6" Guid="{44E0BD30-7838-4F60-8753-19A85745F0F5}">
+                            <File Id="fil60217B1DF678F42C08FAA76ED47CCB04" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gdalvrt.xsd" />
+                        </Component>
+                        <Component Id="cmp64D353F038D891EE988BB88BD3DBC43F" Guid="{6DAE29A2-370E-4965-ACF6-D5C864DB3CC3}">
+                            <File Id="fil5F6E32DA0D554D431CBCC51283BE5ED7" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gdal_datum.csv" />
+                        </Component>
+                        <Component Id="cmpE072FF4B1C65832188998DEF7E198C87" Guid="{D5EFDFDB-75F2-4B87-B863-9C6DFB6D984D}">
+                            <File Id="filFC669E5771F123A24F1C84D5902FB05F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\geoccs.csv" />
+                        </Component>
+                        <Component Id="cmp0B6B5366A0337FD8A12D609613AD0DCD" Guid="{06E895C5-59A0-4B70-961A-17B0E4907B4C}">
+                            <File Id="fil551609F6B82F0001302B5480E6DEF0B6" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gmlasconf.xml" />
+                        </Component>
+                        <Component Id="cmp58CA62CC4E4E7D1D998C50092417BD8E" Guid="{19AEBF29-3765-4FC6-96FE-B06AE80525D6}">
+                            <File Id="filE84C25689DBEF762C4485F7FC46E899D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gmlasconf.xsd" />
+                        </Component>
+                        <Component Id="cmp69DE7C3819E3A8EBBA512EF56B1A9599" Guid="{2735EF26-47AD-43B3-982B-9680F3C8507E}">
+                            <File Id="filFE7133346BF5DB3414EBB02C91C693DC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gml_registry.xml" />
+                        </Component>
+                        <Component Id="cmpE8B227B5925263F0FB79D0F4256B87AE" Guid="{530CB454-1472-40A4-945F-E88E9599179C}">
+                            <File Id="fil8D2F223D2D1DBD38831FD879A6BFB442" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gt_datum.csv" />
+                        </Component>
+                        <Component Id="cmp79570CA604D7CDDB02F8E87C4CC3927C" Guid="{A86437F1-AB50-4461-AEFD-929DBC5EAF1C}">
+                            <File Id="filCCC9D1C3152292FD883C1D0372C47740" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\gt_ellips.csv" />
+                        </Component>
+                        <Component Id="cmp028E6610D49C850E06EC4095CA3F11E3" Guid="{CB38F786-703F-4D90-841A-3086AEDF993C}">
+                            <File Id="fil87BDB1339BDC87F2CEBEA63830C963FB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\header.dxf" />
+                        </Component>
+                        <Component Id="cmp594D733B1327668D9BB4D0F5F7CF98AE" Guid="{7E6B2477-7D50-446C-9C13-6F76895BA200}">
+                            <File Id="filF711D3FB1696B56435232C909118CF59" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\inspire_cp_BasicPropertyUnit.gfs" />
+                        </Component>
+                        <Component Id="cmp66635C1E854FAF5A280BDA0099DAD4E2" Guid="{80F38F53-FDB5-4044-A62E-52352E8A0BDC}">
+                            <File Id="filBA9DA2709233A0A0589BE48E19C3600C" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\inspire_cp_CadastralBoundary.gfs" />
+                        </Component>
+                        <Component Id="cmp47DC062B9FD988EB85B4E80A0AFB4D41" Guid="{9F909533-6A85-4B6D-A226-EA111C32E32E}">
+                            <File Id="filFDAE2D67C4CBA99E9B2F70224BB9CD20" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\inspire_cp_CadastralParcel.gfs" />
+                        </Component>
+                        <Component Id="cmp612BB37A54F41C94F1A69E0396063AA4" Guid="{3CD23035-AD68-46CF-8D70-9C18804216E4}">
+                            <File Id="filBF00DEABC407C537DCD486AD9CE0C384" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\inspire_cp_CadastralZoning.gfs" />
+                        </Component>
+                        <Component Id="cmp54F7DFC403F0B74EA329D4596F825988" Guid="{58C1D91F-23F3-44D6-9D63-81EB95DC7996}">
+                            <File Id="fil314F4D4AD4E975A5A43A002C24E5E839" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_AdmArea.gfs" />
+                        </Component>
+                        <Component Id="cmp5AAD1C40E590D7167BE5BC4807238E48" Guid="{E9338C52-2184-4BF7-9709-2DFA077498F9}">
+                            <File Id="filBA33C793463C4A80B4A6E3B0A94AD9B5" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_AdmBdry.gfs" />
+                        </Component>
+                        <Component Id="cmp26F413C1FE1378170E04D61CF183574E" Guid="{8160BFC4-93F3-4E93-B1EF-8D09301AC02A}">
+                            <File Id="filA76821807C994572FB17D3EC787A57A0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_AdmPt.gfs" />
+                        </Component>
+                        <Component Id="cmpB0D31FA6EC67D47DE18262613A959535" Guid="{F61F027F-E7CF-4C84-A721-3E30D6ACEC12}">
+                            <File Id="fil6AEC6433EE3BD952DAF53CAF13B1897C" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_BldA.gfs" />
+                        </Component>
+                        <Component Id="cmpF8E31C062154CB2CE2E7569916F8F609" Guid="{FC9B245E-3609-454B-93EB-AC559D644F33}">
+                            <File Id="fil9801C0ABAC4CBFFCA21E86D38939E516" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_BldL.gfs" />
+                        </Component>
+                        <Component Id="cmpFEB168AE236EFF16C77F1E6CBD48849A" Guid="{E9C6B6D8-E958-467D-B435-6A33A67B0FE3}">
+                            <File Id="fil243445795E2D5D45D03FDCAC965B625B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_Cntr.gfs" />
+                        </Component>
+                        <Component Id="cmpD8573C3AE19B33D9A2AD25626C1631A5" Guid="{A392C14E-603C-4F1F-BDB3-A9DBEA90D70D}">
+                            <File Id="fil90ECA3481F3F77883EED7AEE8E38A1E8" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_CommBdry.gfs" />
+                        </Component>
+                        <Component Id="cmpA56848331FB322D5DD087A5C84FB168C" Guid="{021578E6-A5A3-47AE-B5B4-A9AA52EE15FC}">
+                            <File Id="filB4CD0CC6BB6DB4A99F5993EFFD1232D3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_CommPt.gfs" />
+                        </Component>
+                        <Component Id="cmp4955099F72470019C0CA2CFF80B47731" Guid="{F5F9020F-A1EC-40AA-9B7F-0BDCFDE66233}">
+                            <File Id="fil8F24B6AC12BB191F7255019537D636D3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_Cstline.gfs" />
+                        </Component>
+                        <Component Id="cmp3C0D0C801AC5628D7B0B6760D41DC716" Guid="{84EBA843-0007-4EBA-8340-05D56FEE5BF1}">
+                            <File Id="fil67346419D1BFDDB8D5C21F488DFBCEBB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_ElevPt.gfs" />
+                        </Component>
+                        <Component Id="cmpE23889B31B3505E4EE220E6994F6BA4B" Guid="{3D8BA127-1E3C-4992-9581-657290E7D390}">
+                            <File Id="fil081F94BCBA3C1816172BDACAAC88FF28" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_GCP.gfs" />
+                        </Component>
+                        <Component Id="cmpEF0CFA4B922B374A267F3B3EB8689B18" Guid="{00C2420C-EB52-4761-A85C-DD5CBADF7867}">
+                            <File Id="filA8C0FAFE771056C8D5E78CEDB7C8AAF8" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_LeveeEdge.gfs" />
+                        </Component>
+                        <Component Id="cmp7611FCD80B20E645BB0030E68AAA8036" Guid="{0D72CA15-C9DB-4C0B-B64F-6C051CF5D1D4}">
+                            <File Id="fil3F3C8CA49EC410553D0918B0E1344CD2" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RailCL.gfs" />
+                        </Component>
+                        <Component Id="cmpAB2BB19D56BA9BBF32ECEBBCDF1A4F1B" Guid="{B559329C-1F48-4483-BB25-0C7566A5DDE8}">
+                            <File Id="filCCA45C7E5B1175E3B2CB37820818EA54" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdArea.gfs" />
+                        </Component>
+                        <Component Id="cmp70F5B68AC75CDAF8138FB5B94C5E51BC" Guid="{01174B2E-2608-4EB5-A956-3FD2D206B0E0}">
+                            <File Id="filC1C0CC76C0884874C580C28C95A9FFEA" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdASL.gfs" />
+                        </Component>
+                        <Component Id="cmpC66F86F15C8A4F0EBCBF56A2F46957FD" Guid="{312A2EB8-CC47-4EF2-946E-B6E700CCC317}">
+                            <File Id="fil9B0442A9C5D236D109EB5B0C07F4930B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdCompt.gfs" />
+                        </Component>
+                        <Component Id="cmp6D7B759F674B6D5845E587DAD816BCD8" Guid="{C68CD21B-D4D2-45F5-AD4D-E56D7EA77DB9}">
+                            <File Id="fil18BA3B1EFDE5F68E667866517D682228" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdEdg.gfs" />
+                        </Component>
+                        <Component Id="cmp893D664643765D0E611D8DEAE0B4DC01" Guid="{AA419FFE-DF4F-4F16-BDA0-814DD93F8E6F}">
+                            <File Id="filF3E0D66E8C12E8CEE0E1488380CE9044" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdMgtBdry.gfs" />
+                        </Component>
+                        <Component Id="cmpE8E35773B069A6C2DE1A56F625B35AF8" Guid="{7CF8D943-1BCB-489B-AAA7-C067C6E990AA}">
+                            <File Id="fil68BAFEDEA09A8FF14BACB7ED50F38D3A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RdSgmtA.gfs" />
+                        </Component>
+                        <Component Id="cmp9B1A9911147756933AF9C45C5EE13744" Guid="{57B1FCF0-E756-4E76-B106-E630A1EDF4A1}">
+                            <File Id="fil74A930773B9D2913D96437EA631D976D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_RvrMgtBdry.gfs" />
+                        </Component>
+                        <Component Id="cmp9FD9A543DDB07074B6F0CF51866A3E32" Guid="{C3957E8F-5F12-4E48-9126-8C187EBBD0D2}">
+                            <File Id="fil2D96163D61C3B5AEE7296BEAD29A2549" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_SBAPt.gfs" />
+                        </Component>
+                        <Component Id="cmp0EECC983578DFB81262A411023F07A78" Guid="{574F71DF-6166-43FE-A0E2-E7DC39E5DF4D}">
+                            <File Id="fil82BB258DB0B4B4E8FFEF7EEEA42633C3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_SBArea.gfs" />
+                        </Component>
+                        <Component Id="cmp5D1927BAEB62885C1F78DA8233634278" Guid="{26512481-C990-4681-99AB-1F34DE6F8979}">
+                            <File Id="filD2C4A777F4A74400BDD85EE7414F525F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_SBBdry.gfs" />
+                        </Component>
+                        <Component Id="cmpCD76ED35DCDC017492999B5050E76FC5" Guid="{59F78B4D-F623-4B05-A112-A1DD7D21FFD3}">
+                            <File Id="fil670830B12A0CBB0671C3A2A671468E8D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_WA.gfs" />
+                        </Component>
+                        <Component Id="cmp9AE68DECCD9275549FF68B92BE3E8D46" Guid="{7090489B-993D-4D1E-B80D-BCA5C2A23525}">
+                            <File Id="fil123DA6D916443367EFBB05D4A1ABF96F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_WL.gfs" />
+                        </Component>
+                        <Component Id="cmpF688002237D8FD8C14B1F1FB4721D816" Guid="{4944A955-7175-4073-BBE7-173C666BA3D7}">
+                            <File Id="filEA55220C9F720E7099A5BB5332C954A9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_WStrA.gfs" />
+                        </Component>
+                        <Component Id="cmp613BB4B54E7F16491D41BA8C30D675A7" Guid="{599B5A62-F9DD-436C-9B0F-61D1FC824349}">
+                            <File Id="filD947149CCB35AB8A5EB6E7B9C333D396" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\jpfgdgml_WStrL.gfs" />
+                        </Component>
+                        <Component Id="cmp3991E8D1D347B903E11C0A01F70D5497" Guid="{B8B3E29E-D8D4-42AF-8BBC-102B07458AC2}">
+                            <File Id="filCECD7B14A2681386921368FB0723E57E" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\netcdf_config.xsd" />
+                        </Component>
+                        <Component Id="cmp047541984ED0A00752E95E6D603660C9" Guid="{C76A91A8-7CB5-4AAE-B33A-B65154BA00A8}">
+                            <File Id="fil4349D5A6657AC9E50437218137B739B0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\nitf_spec.xml" />
+                        </Component>
+                        <Component Id="cmpBDE8D87A11DE02F1594980D2CD7CC8B6" Guid="{06D1DED4-55CA-4955-8117-B6AE997B5F0B}">
+                            <File Id="filE9A54A0A9D64927F501551FFF04CD760" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\nitf_spec.xsd" />
+                        </Component>
+                        <Component Id="cmpB813EFEE28F9D5FAA0E3643A7642869B" Guid="{9D2670A9-A24A-4B19-B584-03D01715D01B}">
+                            <File Id="fil34290585703FFC625519B5F567F9EF20" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ogrvrt.xsd" />
+                        </Component>
+                        <Component Id="cmp2EAD93DA54871B990652917890E73EF9" Guid="{ADF769BF-EF80-41DE-89F4-BCE8DF32AB13}">
+                            <File Id="filDCFB8B87F401A215848353B8F8F456C0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\osmconf.ini" />
+                        </Component>
+                        <Component Id="cmp0E0651A73A341A493953491DB43C32B3" Guid="{4D0E69F6-5F08-479B-8726-2273E90E2356}">
+                            <File Id="filFEBC6C835546101FF2E9AB72FC9E61B3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ozi_datum.csv" />
+                        </Component>
+                        <Component Id="cmpA67E4C8770FD74DCB7F3AA91FDC41121" Guid="{D9BCA431-E8CB-4662-BE37-73F9B7A1F873}">
+                            <File Id="filDB1DBA89687206A55C796AB11915A064" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ozi_ellips.csv" />
+                        </Component>
+                        <Component Id="cmp286737325CFF0DB9C1F148D65D2FCEA1" Guid="{AF54DCEA-DE08-4F0D-A31C-CB5FE91A6FCE}">
+                            <File Id="fil5513486777FF99A0636ED69D8DEAD98A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\pci_datum.txt" />
+                        </Component>
+                        <Component Id="cmp939325F7D0AA392993A158068A19974E" Guid="{407BE3CD-3FE4-4629-9226-A2985D8DFADA}">
+                            <File Id="fil38D95A401E9E8EDA41A8B47EB7AB91A2" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\pci_ellips.txt" />
+                        </Component>
+                        <Component Id="cmpFBB37DFD47BEEA819F64EF49942DD10E" Guid="{4571BA28-31C9-455F-B9EC-98A876ACBF67}">
+                            <File Id="filA3E0151DABBC8A89F29DC96130173480" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\pcs.csv" />
+                        </Component>
+                        <Component Id="cmp4539B8F1EF07F3E77B45CBAD2C6DEF0B" Guid="{C7B52EA9-2525-4C9C-8AD2-82F689F1B995}">
+                            <File Id="fil0BD05717267C11B3C792F1AB6D31DEC1" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\pcs.override.csv" />
+                        </Component>
+                        <Component Id="cmp04204D6373FEF0249FC873BCF364DD57" Guid="{929BF53F-9423-45B8-9B69-70C5D8CFAA5B}">
+                            <File Id="filC175CA1854E59E827FCA82458ECEF227" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\pds4_template.xml" />
+                        </Component>
+                        <Component Id="cmpFEC8308169351CAAAEA106F2D55AF000" Guid="{EBD2AE39-8247-48A8-AF96-37097E4065A5}">
+                            <File Id="fil173BFFA794F11E79B6C8B189FF0CCFFF" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\plscenesconf.json" />
+                        </Component>
+                        <Component Id="cmp54297E844C7AE4014CB5E1844B0959FF" Guid="{C8971007-BCA8-4674-BED5-23F031B8D8F0}">
+                            <File Id="fil349ED8EA6995ABE745A28832C3B19FF3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\prime_meridian.csv" />
+                        </Component>
+                        <Component Id="cmp106032646384F971C1FFE12A493B2A87" Guid="{EA522F22-1AE1-4011-B231-DBD46673CD6A}">
+                            <File Id="fil6827E791712ABD69AA45D77D3354B49A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\projop_wparm.csv" />
+                        </Component>
+                        <Component Id="cmp5BC061638136445A298F503683985230" Guid="{0922D6B3-9572-469F-B4CA-1814A43C32D2}">
+                            <File Id="fil2DDD8230466AB097AB952F16EF36D770" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ruian_vf_ob_v1.gfs" />
+                        </Component>
+                        <Component Id="cmpCCE0EB49995CCE19D9A4A78D2C24656C" Guid="{6BE5E295-B4D8-45BC-A487-65DF1435A7C4}">
+                            <File Id="fil0D838B1147CAB00697FDE2992B591A6F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ruian_vf_st_uvoh_v1.gfs" />
+                        </Component>
+                        <Component Id="cmp912BB6B571D6A60150982F8F972E31EB" Guid="{AFE9BBD4-C571-40EF-8C78-5CA5BD1C82BC}">
+                            <File Id="filC165981769038EB966BAB3995CFE04E3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ruian_vf_st_v1.gfs" />
+                        </Component>
+                        <Component Id="cmp701A101BE0E02FAA5F9C10ACB2BDE2C2" Guid="{E2E02EB6-9CEB-4E8F-89FB-4C8751D77840}">
+                            <File Id="filEDA7B4768AF6E150AE04153052FE948D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\ruian_vf_v1.gfs" />
+                        </Component>
+                        <Component Id="cmp793BA78163A99BEE976A6067A397819C" Guid="{10B47C1B-BAD0-4E21-9D32-D85510F1DB26}">
+                            <File Id="filE03C6EDA907B2C89B43207443AD0A2FC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\s57agencies.csv" />
+                        </Component>
+                        <Component Id="cmp14278CEB15E43355CC658D00B5674A3E" Guid="{03DDDA4B-11F8-4AF3-A0D1-42FAC68D0E2A}">
+                            <File Id="fil0CE1B7679ECEDFB43474E6525895E683" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\s57attributes.csv" />
+                        </Component>
+                        <Component Id="cmpF0CF3865FC6C7BF100E45744C678BC4A" Guid="{78F30E97-78D3-4FEA-8DA9-F7ED68CD3A6B}">
+                            <File Id="fil9E1BDBF33B09366CF98A28E8979A980A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\s57expectedinput.csv" />
+                        </Component>
+                        <Component Id="cmp415A5CDA013FE80D9FB2C26F128D3D09" Guid="{34A77FE6-908C-4CB2-9AA9-FB0E4A4D7675}">
+                            <File Id="fil61D270FC6103841C19D35303AACF2862" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\s57objectclasses.csv" />
+                        </Component>
+                        <Component Id="cmp56C4F031C46D8E6FA408BE035E555435" Guid="{BC7A2FEC-4D6C-407E-82FD-BE9F8BF821B9}">
+                            <File Id="fil594F914B69B8858875DE26E7C8065213" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\seed_2d.dgn" />
+                        </Component>
+                        <Component Id="cmp6003CC0F491AB780D9B9E8F04876A094" Guid="{F0A4BB5C-9B6D-468A-8A76-FEDF308C1B68}">
+                            <File Id="fil2D192055C5DCB190FC8B3B755BA2429D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\seed_3d.dgn" />
+                        </Component>
+                        <Component Id="cmp5B4540B46EDC94B9F45B8113D20739CB" Guid="{6BD2A368-5E4F-4721-AE51-F930577C3ED9}">
+                            <File Id="filD39F75456EE09B3EB996564B69921A0E" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\stateplane.csv" />
+                        </Component>
+                        <Component Id="cmp1D661C5CCB4A39FD45B33BF015AFFCCD" Guid="{D6ED936D-9746-42C5-AD3B-17F6BF406D0C}">
+                            <File Id="fil0F50820981E1C35B503B7611EEB1AB4D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\trailer.dxf" />
+                        </Component>
+                        <Component Id="cmpDFED059BB2EAC5E2004FF7BAE787F1AF" Guid="{F267302C-3350-4CA6-BE86-4A02D475499D}">
+                            <File Id="fil95B2C03C9618439B257FF0F4F7614D5B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\unit_of_measure.csv" />
+                        </Component>
+                        <Component Id="cmp4A5F63F5E9311A1809B26C8AF9C6522C" Guid="{068861A8-5EC9-48E5-BF4F-EDD1B839A4F3}">
+                            <File Id="fil91865B5C32E3694DDA059D189FB89CBB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\vdv452.xml" />
+                        </Component>
+                        <Component Id="cmp1F398EC4DEEEAE3092576B39F8A7FE85" Guid="{26AB0E4C-C8FB-4A55-B456-E11EA180C31B}">
+                            <File Id="filD988C18436EE4A15C638970B68D07368" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\vdv452.xsd" />
+                        </Component>
+                        <Component Id="cmpEE20F60B087421B2751FFA8215170552" Guid="{B196DFDF-70F3-462B-94B7-424EA4FD7E0F}">
+                            <File Id="fil71F8B30346F984BE9A86B0117E7FB730" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\vertcs.csv" />
+                        </Component>
+                        <Component Id="cmpAED39158BC4E463C9BB713FF48DC7A85" Guid="{57C4C6E4-C578-4681-9A62-9C0450A58143}">
+                            <File Id="fil3AD318A14694526021D551C60B14899C" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\data\vertcs.override.csv" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirF418358A044AACBAF3861613723A9880" Name="share">
+                        <Component Id="cmpFCFA8FBBF891717C2A337C1A7923DC4D" Guid="{A3B306B7-8BDC-40D0-84F8-968032506A34}">
+                            <File Id="fil9A3C43B7353C79F264AE7B5397B8F7EE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\alaska" />
+                        </Component>
+                        <Component Id="cmpC90A0CFF9A9E26BD1E8C08FD55150A75" Guid="{77FE1C89-0153-471D-8BB5-5997747004D1}">
+                            <File Id="fil11E4B8127AE04674BF4A0399D7099FDC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\conus" />
+                        </Component>
+                        <Component Id="cmpB86595F9FF1662199023BF48062FD5BF" Guid="{00114EEC-D737-4549-A9D0-F1608E279F74}">
+                            <File Id="filEE641701A98D19ACC250F29F5037DBEB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\epsg" />
+                        </Component>
+                        <Component Id="cmpEEF2FB91FA8228926D98D829EFC8B8F5" Guid="{0F78D1C0-DC7C-4E78-A9D8-815C7A44B7AD}">
+                            <File Id="fil1C1C5F2AFD171639F8AFDD3F729D4D7F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\esri" />
+                        </Component>
+                        <Component Id="cmp298C021A93C50CCAA5C1F027C189637C" Guid="{52957B74-35AF-4818-A3CD-093A2D46627F}">
+                            <File Id="fil79CA421C9127D92067CE105C360C9BB9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\esri.extra" />
+                        </Component>
+                        <Component Id="cmpA4DE14E3F1AAF1E0A2D794C47AE45AED" Guid="{69D4B2BA-A7EE-4ED8-9EB7-96D69E612AA3}">
+                            <File Id="fil8387971C6F138E4732527C0EFE5D9B82" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\GL27" />
+                        </Component>
+                        <Component Id="cmpB007F097E5D05AE1188B2E648945A14D" Guid="{D5213AF4-8844-4A51-8EF3-3179ACA4EE96}">
+                            <File Id="fil155C51AE7261B24C577024EE546DBD53" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\hawaii" />
+                        </Component>
+                        <Component Id="cmp99FB1DCC4FE855D34BADD1DE8E3A5F87" Guid="{0A46FB68-C1FE-493C-8ED9-3C2FD0906E19}">
+                            <File Id="filFA796EC982A25AE658A8B69976EDBAAC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\IGNF" />
+                        </Component>
+                        <Component Id="cmp341618E0E32A6DB465D83229B0106848" Guid="{8BFCBD29-F957-465B-ABFA-DF87477BC7E1}">
+                            <File Id="fil458B6C6EE97C2536EAFD6B761B9AB708" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\MD" />
+                        </Component>
+                        <Component Id="cmp8DD561BD8596BFB6A11EFFA02B19265C" Guid="{F2C4EB35-09A7-4C98-A4B3-99FC5CEFCD58}">
+                            <File Id="fil1A58051BACDF438B68F569E7F2F7A0F6" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\nad.lst" />
+                        </Component>
+                        <Component Id="cmpF4F568F35D2D010BF416CBC731BC6480" Guid="{3C382770-C8BA-48EF-AECC-3DF6E6FFEB4E}">
+                            <File Id="filC0AB2D71908EDF63BF50230B56D953A9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\nad27" />
+                        </Component>
+                        <Component Id="cmpCBE4E24B149F839D6CB731B12EDAC4A3" Guid="{DA50ABF8-BF25-4549-9363-FE18AC159080}">
+                            <File Id="filCEE7F8E52726295D383114EBC6783B78" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\nad83" />
+                        </Component>
+                        <Component Id="cmpDDBEB18EDA6EFE5E9F24A1A141A7B2F5" Guid="{72672DBD-CF5F-4FE0-9E72-4A014C79385A}">
+                            <File Id="fil6C37A4A907138D8E67AFB82E007DE3C0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\ntf_r93.gsb" />
+                        </Component>
+                        <Component Id="cmpAD3E7E76290190918FBBB102CA5586E8" Guid="{5127D08D-C3FA-4B9C-B32E-10E9E1F5F45A}">
+                            <File Id="fil73B86EC724DA6D99F1840D7418D67EF4" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\ntv1_can.dat" />
+                        </Component>
+                        <Component Id="cmpC681A7AF116B22A0D7232F87C4268DE4" Guid="{8C724271-D88E-4585-98CC-091D8281097A}">
+                            <File Id="filEA702B2744B57C0797EE3D2387F70BFC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\null" />
+                        </Component>
+                        <Component Id="cmp9487A166196A5DE920A150F4B9D0AAD7" Guid="{1D4C47EE-9398-4080-90C1-25ECF9683D23}">
+                            <File Id="fil3A1C8121A6472549B629F71D455A7716" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\nzgd2kgrid0005.gsb" />
+                        </Component>
+                        <Component Id="cmpB7FC677810A999ADFDB97C3A6479ABA1" Guid="{99AA81FF-809B-4DD8-ACDA-AFBB11DA4909}">
+                            <File Id="filE3B5F1FCF2A840CEE9924F173AC0A2FE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\other.extra" />
+                        </Component>
+                        <Component Id="cmp0B18DD9842A03C5DA57C5E387A8B6E39" Guid="{72486B44-A378-476C-A24F-48663F4EF9B5}">
+                            <File Id="fil2A42A991653D10027B6C8BE5DF6CB17D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\proj_def.dat" />
+                        </Component>
+                        <Component Id="cmp9F19AAF72E0F578807F5E3302563951C" Guid="{EB56ACB0-F28C-43B3-BF69-07C1E618FFF7}">
+                            <File Id="fil8EBCF92D0996AB1D37B620DD526AAB82" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\prvi" />
+                        </Component>
+                        <Component Id="cmp8A9214A7A30C701D9C807061D85E2E49" Guid="{426623CA-F641-4D23-AB2D-B31E52470646}">
+                            <File Id="fil36F5654A9E5EF2CE9A82C2F5771AB1A3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\stgeorge" />
+                        </Component>
+                        <Component Id="cmp5EDDC4C1501F5004BBE021AADC83E22D" Guid="{445EE92A-CA7F-48F5-8677-8C330E2C56A2}">
+                            <File Id="filDAB7964829AAD81332E2545DCF123BAC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\stlrnc" />
+                        </Component>
+                        <Component Id="cmp5A1E85A15E3CDDD9D1AEA4ADAF1103EE" Guid="{DD344313-B8BB-4520-8E3E-E74306CB20A3}">
+                            <File Id="filEE289C34898EA8BF95CDB76C9E9C3FF3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\stpaul" />
+                        </Component>
+                        <Component Id="cmp9E47050A139116B3EAF8850A1C7926BE" Guid="{ECED80A9-FF50-4F69-9D32-20C3D677EA22}">
+                            <File Id="fil1176621B95F01B89282DD053C5BC492E" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\TN" />
+                        </Component>
+                        <Component Id="cmpB952DB5CC07F6D8276C6D603884CD46B" Guid="{39215B93-4D4C-4A5C-BEA5-BA5698EE3D7C}">
+                            <File Id="fil3EB2279F1D2461B8ABBAAB3F2C5FE3DE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\WI" />
+                        </Component>
+                        <Component Id="cmpEF93E4399551704E2B12EDD950C48C79" Guid="{1513C12F-B7B9-4D7F-B9B2-16352280BF9A}">
+                            <File Id="fil4434471CBDE01508A948B223CFBB2C44" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\WO" />
+                        </Component>
+                        <Component Id="cmp24D646A3395DE0EE31177291691D73A9" Guid="{FFEF3F78-4237-41AE-B37C-EE6048139921}">
+                            <File Id="fil655C8F124B1B071B5EF3EFE48C1AA184" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\share\world" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirA7D990B246A4AB9AEF292A16F803B8D5" Name="x64">
+                        <Component Id="cmp219EFD553458E5B2546578E0C60327D3" Guid="{ACD49E63-9949-4A5D-BDA3-8CACF4656ED9}">
+                            <File Id="fil1B00FEC9BBA8B6CB17247C5E850A4A80" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\cairo.dll" />
+                        </Component>
+                        <Component Id="cmp7600B7B106B9963BD9058A5792D726EC" Guid="{763BF415-4911-445D-AB29-BA41004FB26C}">
+                            <File Id="fil0684FE750EA0002C9D27D994613E96D5" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\expat.dll" />
+                        </Component>
+                        <Component Id="cmp1282F78416482EE34111C07A7188E4C7" Guid="{789ADC63-B0FB-4E11-86D2-383CACC9A1D9}">
+                            <File Id="fil176B3E8FAAFB154DCF644404BD7B9FDD" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\freexl.dll" />
+                        </Component>
+                        <Component Id="cmpF3BA975749B4D3D7D3ED3F64D8D9C095" Guid="{02BE42CB-9A9C-407D-BB06-B91ED4020ECD}">
+                            <File Id="fil64198FD2CEBC7DC934FCD92ED09E44DC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\fribidi.dll" />
+                        </Component>
+                        <Component Id="cmpA8D28B3EDB40CCA3A28D8C003B535DF1" Guid="{974B1708-2BF8-43F8-BCA4-D0C56AB4D087}">
+                            <File Id="filF80322B1A10A049A190D871697383310" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\gdal203.dll" />
+                        </Component>
+                        <Component Id="cmpD20EE210D0D0F26150823776C405716E" Guid="{2A9EEFEA-4BFB-4B6F-9F9A-513F1630E13B}">
+                            <File Id="fil105CC2DABA00CF4689A666E290662730" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\gdalconst_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp6CB8418A846483BE964B780B68EAACCC" Guid="{76FB98C0-AB09-4F3F-8581-F7FABD10ACAF}">
+                            <File Id="filF990ACE5132DBB215F7C94E6CBC0B04F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\gdal_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp38C78EE7BA578737F2611EF4D1B8FC55" Guid="{C326C2C3-EF51-4C1C-8A57-5000D10FEB59}">
+                            <File Id="fil1B8E63686518329D83A4B796781BC755" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\geos.dll" />
+                        </Component>
+                        <Component Id="cmp58A70E03C34DE06B4D56DF62714B3DFB" Guid="{DD45BA2F-532D-47D3-8A51-7D9CDE8B23BD}">
+                            <File Id="fil2975AB62CAAC069E0C115BA22422BC89" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\geos_c.dll" />
+                        </Component>
+                        <Component Id="cmp329AE01EEF3CEBB20791C4E707252B62" Guid="{D256CC36-38A3-4B0E-8EDC-86CF72E070F3}">
+                            <File Id="fil3A6F73EBF1D86D98ABCAED21C99DBFD7" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\iconv.dll" />
+                        </Component>
+                        <Component Id="cmp26869B047E3DCB1139B7F3B41103744D" Guid="{54D788B6-012F-4AD1-A1AC-475B5E692DE5}">
+                            <File Id="fil23D569E46724F5547F2768AE769EC119" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libcurl.dll" />
+                        </Component>
+                        <Component Id="cmpC87CA41C15EC6CF36C63E62AB76D86B7" Guid="{EDC6F197-0489-46F5-8658-7DCC1A96E9E4}">
+                            <File Id="fil2FB5A7749CF6EF8D0EA5B86FF1BB0D60" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libeay32.dll" />
+                        </Component>
+                        <Component Id="cmp8159736EF73A7A51A03EA400A6D37903" Guid="{65622E60-53B6-4529-B4E3-6AE41BA0DE02}">
+                            <File Id="filAB74122F984D8829C507B53D70E92960" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libecwj2.dll" />
+                        </Component>
+                        <Component Id="cmp3E2C4B9144EBD7D758AB54992F9C11C3" Guid="{902F4E45-23C4-4F01-91A8-853105DA6D2C}">
+                            <File Id="fil61D77E7B8C9542E9BA56A960E507DB5B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libfcgi.dll" />
+                        </Component>
+                        <Component Id="cmp29687A43CF092F53EF7C825B7C6AA66B" Guid="{9E370275-0D27-42C9-9D85-EDEFF3324B2D}">
+                            <File Id="filCA5A142848BFCFED1E06D737B28A1269" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libkea.dll" />
+                        </Component>
+                        <Component Id="cmp0F105F6E77F781C63EFB4621B519E3FB" Guid="{28D2B1AA-95C9-4FBC-A5EE-E12E24588A80}">
+                            <File Id="fil501CA0DC8550162F70318705BF6D3220" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libmysql.dll" />
+                        </Component>
+                        <Component Id="cmp503A8D7A2B909651ADBAC96E0C5909E9" Guid="{6D1605ED-542A-4283-B6E8-C0C4E0AA6B74}">
+                            <File Id="filB1C52EBB6839787F43CD9C2E2C85F7A7" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libpq.dll" />
+                        </Component>
+                        <Component Id="cmpF5331729BB3DE27A2443FADC4DD8E0A1" Guid="{4EAAA96E-2703-47EB-90A1-D585DBB2B48E}">
+                            <File Id="fil3977C13C3371F1E95A1B7D903CA7CDAC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libtiff.dll" />
+                        </Component>
+                        <Component Id="cmp43ECF42A3AB8276FD40976F806ECA31D" Guid="{BD39CA16-9256-44DE-AE66-054ECB208871}">
+                            <File Id="fil3E19F2E83E1AD72FEE4D87F287F87AED" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\libxml2.dll" />
+                        </Component>
+                        <Component Id="cmpD3896B300E06049B8C1F31674BFE9317" Guid="{8926E331-6D3B-436A-9BDE-F99DBC52C0E3}">
+                            <File Id="filEA181845B3E1D25581B1F10277D549AA" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\msvcp140.dll" />
+                        </Component>
+                        <Component Id="cmp8FAB154E0BD1CA755CC0FA80CAC6EB8C" Guid="{E1756B01-2585-4807-B8A9-D79EA468B017}">
+                            <File Id="fil6207DDE9F851EEA4F906768B3300113A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\ogr_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp2D2D7E48FE00F9206D485F6B539541FC" Guid="{EC9622A4-9694-40EE-B726-40A3085C67B6}">
+                            <File Id="fil4AC95838ACD341EBC6D1B70DA6D916AF" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\openjp2.dll" />
+                        </Component>
+                        <Component Id="cmp74E4BEA148D87FD21E3C83AC3472FFBC" Guid="{F46D146C-0DDC-449B-A7B5-61DF33A73EFC}">
+                            <File Id="fil05E3A5F234E2387C0E3584D5BD2974A6" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\osr_wrap.dll" />
+                        </Component>
+                        <Component Id="cmpCC960969C65B1D16856FE40E65E34523" Guid="{2AA87ECD-CC88-4ABA-B0C2-0B680F90F655}">
+                            <File Id="fil90C38D412D2F14DB84B7242E6374C9BC" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\proj.dll" />
+                        </Component>
+                        <Component Id="cmpE6D32642943D6053C87116A15707B56D" Guid="{11FEB704-E8E7-49DF-A2DA-1FF08A1987AF}">
+                            <File Id="fil70BABC19A57C9C438A624C7CE1B68192" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\spatialite.dll" />
+                        </Component>
+                        <Component Id="cmp6169B8F307F6331DEA91A6BE2E89A29D" Guid="{B18199B9-03C3-40A2-98D7-488898EB4585}">
+                            <File Id="filC8E2F4903EABD8CF362FDB600A5BF381" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\sqlite3.dll" />
+                        </Component>
+                        <Component Id="cmpBA5E337CEC25372D19A3E52F5EF1BFE6" Guid="{E96D5BFA-5DD0-41B3-948E-6BFA24932CF7}">
+                            <File Id="filBECBE026747462FBB43779355F7EE8B3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\ssleay32.dll" />
+                        </Component>
+                        <Component Id="cmpE7E385856527AC71DEBDFDE2008FEFA6" Guid="{3588E0BE-4345-4DBC-90E2-F3D1E9AFFC84}">
+                            <File Id="filE9396C95B4037BD5F3D5C1105AD6274F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\tiff.dll" />
+                        </Component>
+                        <Component Id="cmpB77CBD3A5CF4AC170AE1ECCF403B95AE" Guid="{23247629-0B82-4536-BE0D-EE354A74E3BF}">
+                            <File Id="fil5F1FA7D654ABEEE18119540C2B174157" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\tiffxx.dll" />
+                        </Component>
+                        <Component Id="cmp2857CC9AA25276189FD446DF19F8627F" Guid="{C9C62200-DD68-4583-B257-25D6A4E6D09A}">
+                            <File Id="filE04B818C1E27280EB21A88430A985B19" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\vcruntime140.dll" />
+                        </Component>
+                        <Component Id="cmpA32D448DD3DBE0CBAA2F9CB69B756B6D" Guid="{2D068A86-D178-4081-889F-2F85E7B3D8FB}">
+                            <File Id="fil982F2E8F10C089210B84319D582468BD" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\xerces-c_3_2.dll" />
+                        </Component>
+                        <Component Id="cmp36BD3126E1A8689CE76D2499DD558ABC" Guid="{A7D5D360-549C-4055-AA96-04519CCDA141}">
+                            <File Id="fil4F27285E6144FCD40A87C890A22CD39D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x64\zlib1.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir4141CF94B1029D305C9E47962DFD3A61" Name="x86">
+                        <Component Id="cmpDBFB017B0E481FC82C0EE808118E7A9A" Guid="{219A9929-46A8-40DE-AE8A-FFE90B8337C4}">
+                            <File Id="fil942C5225F6B893572C0C4BE8F70C585B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\cairo.dll" />
+                        </Component>
+                        <Component Id="cmpEA22D79FC3332F9F108CF3461A2FDA7C" Guid="{2676D5F6-FF31-420D-8516-387BCAD3375A}">
+                            <File Id="fil646FEA45CD579943EC3430A62F297E8B" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\expat.dll" />
+                        </Component>
+                        <Component Id="cmpE37C7366A33246DB5B5114DDB7FE1612" Guid="{25D89855-C3FE-4F87-BBFF-89EF2B7E6DC4}">
+                            <File Id="fil187ACA2E763195D82AADE3ECFB3B1597" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\freexl.dll" />
+                        </Component>
+                        <Component Id="cmpA9F791696DD5BFD70B48AB2B7FEBA488" Guid="{CB37E2CE-B382-40E2-AE73-4A51C86C2C20}">
+                            <File Id="fil5EEE2A5F71FB006178DDCEF63D9C79D1" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\fribidi.dll" />
+                        </Component>
+                        <Component Id="cmpF303094E9B1F4BCA5168DCED1B8E9B5E" Guid="{35341082-966F-40C1-8D01-68B89657DEA6}">
+                            <File Id="fil947C64AE41219CC76C3AE57AE623A9FF" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\gdal203.dll" />
+                        </Component>
+                        <Component Id="cmpD0340E5EF6512C781BF0877EE91C4336" Guid="{018F3E18-385E-4264-8AE2-85A7DD7C554B}">
+                            <File Id="fil391343F898BCD4C7FFD36C24BF209136" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\gdalconst_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp292553A0A104F75C43E639465BDC534B" Guid="{7973FE90-4330-4D0B-AD02-B9D57BA2F1E8}">
+                            <File Id="fil58A88C04E8D7E2614322A7A7AC1DA369" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\gdal_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp28DCF93F60803CBFA8EEB5E2A0E36560" Guid="{A738912E-9C85-44FA-AEE2-6B7658FE7125}">
+                            <File Id="fil149453F2E0AAF36F7DD95B87DCF104CD" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\geos.dll" />
+                        </Component>
+                        <Component Id="cmp897266B90375CE569860C20E88308CF1" Guid="{C7AE5E3D-C98E-4822-8E2E-9E8ACD8E098C}">
+                            <File Id="fil6E627CDEDF363651B2127A0B48BEA830" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\geos_c.dll" />
+                        </Component>
+                        <Component Id="cmpDBFDDF86FD5CFBAB8A3EF3033A330DEB" Guid="{6040256C-119F-4D1C-AF64-E21A5FDD9C76}">
+                            <File Id="fil7A043DEAA4B5B38B52B9B4787FF40B96" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\iconv.dll" />
+                        </Component>
+                        <Component Id="cmp7AEDE81D760E8D4B83CABCBFE4121B25" Guid="{77E33D18-D253-44E6-B129-7D92B9E32F52}">
+                            <File Id="fil63520F1DBFAD744E15C4F2DAD3F333AE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libcurl.dll" />
+                        </Component>
+                        <Component Id="cmp49D981A404DFD4B81231F722A60AB45E" Guid="{54F15DF7-9D09-43E3-A22C-340455C5CAF5}">
+                            <File Id="fil1C842F5E0214791EC8B348AC8A96564F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libeay32.dll" />
+                        </Component>
+                        <Component Id="cmpBB506C59E039FBA5DF9D4DB32B6FA97B" Guid="{E99DFBEC-1E6B-431D-B939-FD8D9751119F}">
+                            <File Id="filCFB9045D1C9AE7EEA9AA98CBBC97D2BB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libecwj2.dll" />
+                        </Component>
+                        <Component Id="cmp4A62ED2C3826E310F02550380B759718" Guid="{DF761C5E-4652-481C-98FE-69C66351FB2F}">
+                            <File Id="fil0C87C1F47402B5B73E29ECBBA7431B91" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libfcgi.dll" />
+                        </Component>
+                        <Component Id="cmp587DE23F35E3E6AB21AACEC017311FFE" Guid="{533E6C68-E6C8-477C-A463-92EA0E34C0AC}">
+                            <File Id="filC44B082C3F9C68A5319E46AC63E24F8A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libkea.dll" />
+                        </Component>
+                        <Component Id="cmp2E40035B0D288B3EEAC1581CB85EF24F" Guid="{8D413065-98A4-4296-94A3-BA16AC6ABBD6}">
+                            <File Id="filF7BAA48D8E14DB7CE2C2F117A4133978" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libmysql.dll" />
+                        </Component>
+                        <Component Id="cmp47822ED450B468F17B48A2E49E84F91C" Guid="{9C14A100-1C62-480C-8022-98D45B635385}">
+                            <File Id="fil736A4FE44FADEC6A6836255F3675913D" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libpq.dll" />
+                        </Component>
+                        <Component Id="cmp59C3EF25C511869E3E01A0088013C892" Guid="{E68D1604-44EA-402F-AEAB-38D30CE3EEA1}">
+                            <File Id="fil779F9697D774A49CAF056D6A7A715030" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libtiff.dll" />
+                        </Component>
+                        <Component Id="cmpB6A551B93EC72376C6BE46C47E797383" Guid="{C2865BF4-7160-41E2-BD2D-7A4C5CADD2A9}">
+                            <File Id="fil39AE89A46099B037BE1999E43F53BD14" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\libxml2.dll" />
+                        </Component>
+                        <Component Id="cmpD30501201BDE995E11DEA92AD6FB80A1" Guid="{B3C4633D-89D7-4925-9501-B97FD2736A78}">
+                            <File Id="filB5B9A4876A4955723DF4118A8AA42CBB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\msvcp140.dll" />
+                        </Component>
+                        <Component Id="cmpB8DE29A72FC194C2492A86CCBAC9E91B" Guid="{BC0D1F62-7394-4250-8A88-5263095E7F47}">
+                            <File Id="filA2CFFB8F58AA49F66190BF9C594145AE" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\ogr_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp6B55BD828757951B2E8D7E6DA3E475BA" Guid="{0A2E2217-9049-41F7-91BB-720D3ABDCB3A}">
+                            <File Id="filC5922ED1C896F5248665360CA08AF840" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\openjp2.dll" />
+                        </Component>
+                        <Component Id="cmp9325B1F4DC7FED7FE0016F65381A44D4" Guid="{981CF3F0-ECE3-4533-89F2-EA0CCD78F884}">
+                            <File Id="filF5927D5D75229ADBE048E5404769F5E0" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\osr_wrap.dll" />
+                        </Component>
+                        <Component Id="cmp2D7E2F7B406C302BC716318334C15D4B" Guid="{627FF914-D468-4E28-8063-38F6A61618D7}">
+                            <File Id="fil7500AFA4A7AF631A38231084382CFAA3" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\proj.dll" />
+                        </Component>
+                        <Component Id="cmpA2FC3D32C787BB36AD9F828C8D58C0B1" Guid="{D9A8B343-C3C2-4E2C-8F94-FF1689440A5F}">
+                            <File Id="filDA4AE74AAE4186EA6535556894613B1F" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\spatialite.dll" />
+                        </Component>
+                        <Component Id="cmpDC7FC5CD934A2C8DA94D82E5D62B9C7F" Guid="{B0993B0E-0CFA-460C-B07A-8888B2ABAA05}">
+                            <File Id="fil23276110E2FD13198128C679B9CD85B7" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\sqlite3.dll" />
+                        </Component>
+                        <Component Id="cmp18C0988E55792681A4A8B8454A3D01BA" Guid="{28069DD7-5314-4201-AC6B-613DAFF4DE8E}">
+                            <File Id="fil014BF8B1183E8087C9F6E22F673C13EB" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\ssleay32.dll" />
+                        </Component>
+                        <Component Id="cmpA92A3DF00609A91B0B04AEB5CCAB8A75" Guid="{F28A95B5-59BB-4F7D-B0C0-9BEC0469BAD0}">
+                            <File Id="fil1BC0FE5B18F53F3ED33B2B0C6AB13B8A" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\tiff.dll" />
+                        </Component>
+                        <Component Id="cmp78C005BEDC991CD73C2211CE2FF545BF" Guid="{C7E02593-94E7-4F0F-9C88-2EEBF17A64DA}">
+                            <File Id="filE0251F29853F44191D432B012040B3C7" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\tiffxx.dll" />
+                        </Component>
+                        <Component Id="cmpDFF3F959D73400BDC2BCD45544AA69B3" Guid="{D064B472-8729-4819-AF85-7619B8B83540}">
+                            <File Id="filE3872BCABB32C631CE93E910F9ADD9D8" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\vcruntime140.dll" />
+                        </Component>
+                        <Component Id="cmpC0F24E6419E66454754F645A5CD42BB2" Guid="{19C409AF-A9AD-48B5-852B-96D6634654D9}">
+                            <File Id="fil704769C683E04B390951F793BEDE78E9" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\xerces-c_3_2.dll" />
+                        </Component>
+                        <Component Id="cmpB10F44C83F1685697E2DC01F118C8265" Guid="{70BD0A72-0316-41DF-A67C-F1A60C81A40D}">
+                            <File Id="fil91919F4D74C35271E14F15A105C95804" KeyPath="yes" Source="$(var.BasePath)\runtimes\gdal\x86\zlib1.dll" />
+                        </Component>
+                    </Directory>
+                </Directory>
                 <Directory Id="dirE2535266FCE86D5747E58EED1CDB446F" Name="win">
                     <Directory Id="dir193526E0AFE4707FE3DE52A8D513B0ED" Name="lib">
                         <Directory Id="dir024E238EA4C790DA21ECCC4378CA1272" Name="netcoreapp2.0">
-                            <Component Id="cmpBE44D3EFF24DBD44860236BECF8B7F05" Guid="{E26A51F0-9527-45EB-9AF4-220A41D58357}">
+                            <Component Id="cmpBE44D3EFF24DBD44860236BECF8B7F05" Guid="{2BABDB02-DB08-4239-8227-71042B159C5F}">
                                 <File Id="fil9E880A4601AA7B5EDC6F640277131F6C" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll" />
                             </Component>
-                            <Component Id="cmpA78CB1BD1DD1561AD8290BEF7F6AF0A7" Guid="{F9D34591-88A5-4040-A655-A86F54D40294}">
+                            <Component Id="cmpA78CB1BD1DD1561AD8290BEF7F6AF0A7" Guid="{AAFDF653-7F37-4EA4-909A-B6A1F0F8621C}">
                                 <File Id="fil61D885F1DBAC0FEC2DFDAB6F506B5BE7" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\netcoreapp2.0\System.Security.Principal.Windows.dll" />
                             </Component>
                         </Directory>
                         <Directory Id="dir14C63E40FB7D4BE4BA18AD06F6FEEA56" Name="netstandard2.0">
-                            <Component Id="cmpECACABF19EB99B1DE3B568E7AB89F521" Guid="{9D921A93-F58D-49C2-99EA-E059F829373D}">
+                            <Component Id="cmpECACABF19EB99B1DE3B568E7AB89F521" Guid="{FEDB40FC-BB8D-4AC3-A64F-CF381F8BC8EB}">
                                 <File Id="fil3938B42A336CC997AD99DB6276EDB9AE" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
                             </Component>
                         </Directory>
-                    </Directory>
-                </Directory>
-                <Directory Id="dir7BDCE1E8347F824C636456766F401831" Name="win10-x64">
-                    <Directory Id="dir1580F071DE686BDC0FE7CD7272F3ED12" Name="native">
-                        <Component Id="cmpCFC9C01501BF19BB148E6D39E2807BF7" Guid="{09839EF5-667F-485B-9A4B-64EF3F65E8A1}">
-                            <File Id="fil4405B2E0D074DDC8B6C7D54C9FD600DE" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdal202.dll" />
-                        </Component>
-                        <Component Id="cmpC84FEE6BAFC39B15C2525A1B9B1D63F5" Guid="{67AB13FC-D150-466D-AD6B-EC9C9BA30627}">
-                            <File Id="fil1EB8465CE6561E50CB7D43B145BB75BB" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdalconst_wrap.dll" />
-                        </Component>
-                        <Component Id="cmp70D5EDAC46034EA106AC2CAF07D41D15" Guid="{DF647DBC-3A2C-4C46-8685-CB2DD1A3CCD6}">
-                            <File Id="fil55D6D209B682AFF7DD2733CDF7DCD3E6" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdal_wrap.dll" />
-                        </Component>
-                        <Component Id="cmp9E8B7DC0C1393CD705EDE0C83277C70F" Guid="{2258EA3C-85AB-4C45-9914-5140F9A7B908}">
-                            <File Id="filE8959FD0F535CD767EEE3D7F8C4976FF" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\ogr_wrap.dll" />
-                        </Component>
-                        <Component Id="cmp3090404AD839A5299E796796CF663B6C" Guid="{B3B357DE-FA78-46B9-BA30-78EE9EAF874A}">
-                            <File Id="fil7A609046B3888D630F2FCBB143F6E389" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\osr_wrap.dll" />
-                        </Component>
                     </Directory>
                 </Directory>
             </Directory>
@@ -131,7 +776,18 @@
     </Fragment>
     <Fragment>
         <ComponentGroup Id="LandisComponents">
-            <ComponentRef Id="cmpE2D4AE701AD15E22F02D77708DB56970" />
+            <ComponentRef Id="cmpF64040639FACE02C3D37EE79894D2894" />
+            <ComponentRef Id="cmpB8DFF0CB94190268B461ABE80BA776B0" />
+            <ComponentRef Id="cmpA8E36B197568345781BE3BD9CBBED4C7" />
+            <ComponentRef Id="cmp9633266E274DDF1F0C416A70BB31C82B" />
+            <ComponentRef Id="cmpBB5CDCB0CDE9C6F86345AC0E4DC2C451" />
+            <ComponentRef Id="cmpAB653323063B2AD94EDA2A28FEFB4939" />
+            <ComponentRef Id="cmp8240A40D64760E44D2D55E515C26ABF2" />
+            <ComponentRef Id="cmpD6DAB10B9A345AEA9B7677B89F31669E" />
+            <ComponentRef Id="cmp66587AEB762727A481263ED23B44DAD9" />
+            <ComponentRef Id="cmpB44CE94A02DAC256C6077858F4CBA54B" />
+            <ComponentRef Id="cmp48DEE89D1EF7A96A313538720B1778FC" />
+            <ComponentRef Id="cmpA5E5F0C085F85BB32FE796C101C31DF6" />
             <ComponentRef Id="cmpEDB3F9C1A64F5B7FD0DE3AE9D19AC027" />
             <ComponentRef Id="cmp87A073CC84CBAB461611ED033F7B4467" />
             <ComponentRef Id="cmp41085EAC789E795CEF559F7DA49C8053" />
@@ -151,7 +807,26 @@
             <ComponentRef Id="cmp28F0C0752A0D42A20E2495477BE8C8A7" />
             <ComponentRef Id="cmpBA4F9B20A294C0CA8C7B331CE8AED5A2" />
             <ComponentRef Id="cmpDDBA1FB6EFD311B8A1ED97D16DD79977" />
+            <ComponentRef Id="cmpFEBFA300471B7AF08B2EDFCF46BC9AB3" />
+            <ComponentRef Id="cmp70F162DF4167AE81CDA6A2A62FE4BC30" />
+            <ComponentRef Id="cmp31DB516F069F692DC3529638EF77058A" />
+            <ComponentRef Id="cmp0793F949DC649B61CCBAFE53A7E90D4E" />
+            <ComponentRef Id="cmp397B937A4DD68833C747A1E0724CD5ED" />
+            <ComponentRef Id="cmp8190295630CCDB4AED08CDE9D9E05208" />
+            <ComponentRef Id="cmpC0A5DABEDD4F84FC7DC96B3DD48E22C7" />
+            <ComponentRef Id="cmpCB14AB51E5ADD5830C4D9BB84430962C" />
+            <ComponentRef Id="cmpDDD8AB00D55A5CB3775FDD1C7EC98470" />
             <ComponentRef Id="cmp447952268F4EE3879A059BE0A129D2B8" />
+            <ComponentRef Id="cmp9AC8A9599C6836569275E872F349D844" />
+            <ComponentRef Id="cmpD1ABE1EE7572C8D86904D94E3C65ED75" />
+            <ComponentRef Id="cmp81575E23654988E0B7907DE37B3E8408" />
+            <ComponentRef Id="cmp8FD9F2458308432D40E0C97E9223B017" />
+            <ComponentRef Id="cmp8C5AF600047B73E6D79C5B2730A4448F" />
+            <ComponentRef Id="cmp9481FCCCDCAEC63C6B7CF177E0BEDB24" />
+            <ComponentRef Id="cmpF670052D2D4DAF6BF7412DE7DAE13CC3" />
+            <ComponentRef Id="cmp69AFDFD5BC87F20BA9D5354986363B5B" />
+            <ComponentRef Id="cmp6978A0C243603DD9DE988E39CA473D85" />
+            <ComponentRef Id="cmp6237430846938D8D711D109C652194AC" />
             <ComponentRef Id="cmpB89425A741FC005084B887C2C63F1CAF" />
             <ComponentRef Id="cmpE427769B92CF4AA8E8BF2C1CA54FAFF5" />
             <ComponentRef Id="cmpCED27DB12DFD0F071D85B176C6928701" />
@@ -159,15 +834,198 @@
             <ComponentRef Id="cmp5A020079B01379C4DFBAFBC026A155EF" />
             <ComponentRef Id="cmp698428C936284B14FA1D9370E2F3339E" />
             <ComponentRef Id="cmp78B52BB1190830845A2750858D4093B5" />
+            <ComponentRef Id="cmpE7E0BA6007AED1A575EE09B85A934A55" />
+            <ComponentRef Id="cmp3FD39D38A6224B10F34E137ADDBDCE63" />
             <ComponentRef Id="cmp37F9E7A0E1FA144F356DC052C56B4946" />
+            <ComponentRef Id="cmp4397D137DEA1CD6F6BD1BC6B7DBD3230" />
+            <ComponentRef Id="cmp57B45A13E7398FB85DD87F865C8BC5CF" />
+            <ComponentRef Id="cmp052A5784F00434958DDF8A019E83CA93" />
+            <ComponentRef Id="cmpE65195071C60D5B9D8B1F8E6D3AE78AB" />
+            <ComponentRef Id="cmp9BDB1E7DA240C8DF939814F5A3F23DAD" />
+            <ComponentRef Id="cmpC186453AE6DAB98C875D6417E7FD5290" />
+            <ComponentRef Id="cmpB320C06BB6C3000D5A1C7D5DE62C0824" />
+            <ComponentRef Id="cmpA88B51BF42AB5A5E498C4F117DB011E3" />
+            <ComponentRef Id="cmpFEF27CD99EC9EB7F273416150D8C6F92" />
+            <ComponentRef Id="cmp12C0C3607ABD33688BDD6D611E0C8C31" />
+            <ComponentRef Id="cmp6D9FB99544AB30D83CAE5E24EE4542FA" />
+            <ComponentRef Id="cmp5C95033E39CB50EEF10F42BBDCC6672A" />
+            <ComponentRef Id="cmpE77FA0A59FE0674839AE510EC4A994CF" />
+            <ComponentRef Id="cmpD17C7CBD7A935069D5C65CE17BB0FBF9" />
+            <ComponentRef Id="cmp50F1F943FA9FFDCA52EB11F572708628" />
+            <ComponentRef Id="cmpA15A7A56148FAB55248B87B74BAD3CD7" />
+            <ComponentRef Id="cmp0C26ADF7E0D221C704A184851140209B" />
+            <ComponentRef Id="cmpD25B5CC0AFC739A393DCC2003369EFAE" />
+            <ComponentRef Id="cmpDF55E20A9AA9891D4F8D90E343ED3C6D" />
+            <ComponentRef Id="cmp7B39DA301DA92AA3686522CD15947AD7" />
+            <ComponentRef Id="cmp10357F0C60E89E938754D5A3591B2DA0" />
+            <ComponentRef Id="cmp7126A5F78308578F32B61C63C0034F7B" />
+            <ComponentRef Id="cmpD371BC547F53D9D64AADD8AD1B5BED9E" />
+            <ComponentRef Id="cmp4F3F663A1A6035609189EC7934583CB6" />
+            <ComponentRef Id="cmp1D689E6B2A43DD064FAC43375DD68FE6" />
+            <ComponentRef Id="cmp64D353F038D891EE988BB88BD3DBC43F" />
+            <ComponentRef Id="cmpE072FF4B1C65832188998DEF7E198C87" />
+            <ComponentRef Id="cmp0B6B5366A0337FD8A12D609613AD0DCD" />
+            <ComponentRef Id="cmp58CA62CC4E4E7D1D998C50092417BD8E" />
+            <ComponentRef Id="cmp69DE7C3819E3A8EBBA512EF56B1A9599" />
+            <ComponentRef Id="cmpE8B227B5925263F0FB79D0F4256B87AE" />
+            <ComponentRef Id="cmp79570CA604D7CDDB02F8E87C4CC3927C" />
+            <ComponentRef Id="cmp028E6610D49C850E06EC4095CA3F11E3" />
+            <ComponentRef Id="cmp594D733B1327668D9BB4D0F5F7CF98AE" />
+            <ComponentRef Id="cmp66635C1E854FAF5A280BDA0099DAD4E2" />
+            <ComponentRef Id="cmp47DC062B9FD988EB85B4E80A0AFB4D41" />
+            <ComponentRef Id="cmp612BB37A54F41C94F1A69E0396063AA4" />
+            <ComponentRef Id="cmp54F7DFC403F0B74EA329D4596F825988" />
+            <ComponentRef Id="cmp5AAD1C40E590D7167BE5BC4807238E48" />
+            <ComponentRef Id="cmp26F413C1FE1378170E04D61CF183574E" />
+            <ComponentRef Id="cmpB0D31FA6EC67D47DE18262613A959535" />
+            <ComponentRef Id="cmpF8E31C062154CB2CE2E7569916F8F609" />
+            <ComponentRef Id="cmpFEB168AE236EFF16C77F1E6CBD48849A" />
+            <ComponentRef Id="cmpD8573C3AE19B33D9A2AD25626C1631A5" />
+            <ComponentRef Id="cmpA56848331FB322D5DD087A5C84FB168C" />
+            <ComponentRef Id="cmp4955099F72470019C0CA2CFF80B47731" />
+            <ComponentRef Id="cmp3C0D0C801AC5628D7B0B6760D41DC716" />
+            <ComponentRef Id="cmpE23889B31B3505E4EE220E6994F6BA4B" />
+            <ComponentRef Id="cmpEF0CFA4B922B374A267F3B3EB8689B18" />
+            <ComponentRef Id="cmp7611FCD80B20E645BB0030E68AAA8036" />
+            <ComponentRef Id="cmpAB2BB19D56BA9BBF32ECEBBCDF1A4F1B" />
+            <ComponentRef Id="cmp70F5B68AC75CDAF8138FB5B94C5E51BC" />
+            <ComponentRef Id="cmpC66F86F15C8A4F0EBCBF56A2F46957FD" />
+            <ComponentRef Id="cmp6D7B759F674B6D5845E587DAD816BCD8" />
+            <ComponentRef Id="cmp893D664643765D0E611D8DEAE0B4DC01" />
+            <ComponentRef Id="cmpE8E35773B069A6C2DE1A56F625B35AF8" />
+            <ComponentRef Id="cmp9B1A9911147756933AF9C45C5EE13744" />
+            <ComponentRef Id="cmp9FD9A543DDB07074B6F0CF51866A3E32" />
+            <ComponentRef Id="cmp0EECC983578DFB81262A411023F07A78" />
+            <ComponentRef Id="cmp5D1927BAEB62885C1F78DA8233634278" />
+            <ComponentRef Id="cmpCD76ED35DCDC017492999B5050E76FC5" />
+            <ComponentRef Id="cmp9AE68DECCD9275549FF68B92BE3E8D46" />
+            <ComponentRef Id="cmpF688002237D8FD8C14B1F1FB4721D816" />
+            <ComponentRef Id="cmp613BB4B54E7F16491D41BA8C30D675A7" />
+            <ComponentRef Id="cmp3991E8D1D347B903E11C0A01F70D5497" />
+            <ComponentRef Id="cmp047541984ED0A00752E95E6D603660C9" />
+            <ComponentRef Id="cmpBDE8D87A11DE02F1594980D2CD7CC8B6" />
+            <ComponentRef Id="cmpB813EFEE28F9D5FAA0E3643A7642869B" />
+            <ComponentRef Id="cmp2EAD93DA54871B990652917890E73EF9" />
+            <ComponentRef Id="cmp0E0651A73A341A493953491DB43C32B3" />
+            <ComponentRef Id="cmpA67E4C8770FD74DCB7F3AA91FDC41121" />
+            <ComponentRef Id="cmp286737325CFF0DB9C1F148D65D2FCEA1" />
+            <ComponentRef Id="cmp939325F7D0AA392993A158068A19974E" />
+            <ComponentRef Id="cmpFBB37DFD47BEEA819F64EF49942DD10E" />
+            <ComponentRef Id="cmp4539B8F1EF07F3E77B45CBAD2C6DEF0B" />
+            <ComponentRef Id="cmp04204D6373FEF0249FC873BCF364DD57" />
+            <ComponentRef Id="cmpFEC8308169351CAAAEA106F2D55AF000" />
+            <ComponentRef Id="cmp54297E844C7AE4014CB5E1844B0959FF" />
+            <ComponentRef Id="cmp106032646384F971C1FFE12A493B2A87" />
+            <ComponentRef Id="cmp5BC061638136445A298F503683985230" />
+            <ComponentRef Id="cmpCCE0EB49995CCE19D9A4A78D2C24656C" />
+            <ComponentRef Id="cmp912BB6B571D6A60150982F8F972E31EB" />
+            <ComponentRef Id="cmp701A101BE0E02FAA5F9C10ACB2BDE2C2" />
+            <ComponentRef Id="cmp793BA78163A99BEE976A6067A397819C" />
+            <ComponentRef Id="cmp14278CEB15E43355CC658D00B5674A3E" />
+            <ComponentRef Id="cmpF0CF3865FC6C7BF100E45744C678BC4A" />
+            <ComponentRef Id="cmp415A5CDA013FE80D9FB2C26F128D3D09" />
+            <ComponentRef Id="cmp56C4F031C46D8E6FA408BE035E555435" />
+            <ComponentRef Id="cmp6003CC0F491AB780D9B9E8F04876A094" />
+            <ComponentRef Id="cmp5B4540B46EDC94B9F45B8113D20739CB" />
+            <ComponentRef Id="cmp1D661C5CCB4A39FD45B33BF015AFFCCD" />
+            <ComponentRef Id="cmpDFED059BB2EAC5E2004FF7BAE787F1AF" />
+            <ComponentRef Id="cmp4A5F63F5E9311A1809B26C8AF9C6522C" />
+            <ComponentRef Id="cmp1F398EC4DEEEAE3092576B39F8A7FE85" />
+            <ComponentRef Id="cmpEE20F60B087421B2751FFA8215170552" />
+            <ComponentRef Id="cmpAED39158BC4E463C9BB713FF48DC7A85" />
+            <ComponentRef Id="cmpFCFA8FBBF891717C2A337C1A7923DC4D" />
+            <ComponentRef Id="cmpC90A0CFF9A9E26BD1E8C08FD55150A75" />
+            <ComponentRef Id="cmpB86595F9FF1662199023BF48062FD5BF" />
+            <ComponentRef Id="cmpEEF2FB91FA8228926D98D829EFC8B8F5" />
+            <ComponentRef Id="cmp298C021A93C50CCAA5C1F027C189637C" />
+            <ComponentRef Id="cmpA4DE14E3F1AAF1E0A2D794C47AE45AED" />
+            <ComponentRef Id="cmpB007F097E5D05AE1188B2E648945A14D" />
+            <ComponentRef Id="cmp99FB1DCC4FE855D34BADD1DE8E3A5F87" />
+            <ComponentRef Id="cmp341618E0E32A6DB465D83229B0106848" />
+            <ComponentRef Id="cmp8DD561BD8596BFB6A11EFFA02B19265C" />
+            <ComponentRef Id="cmpF4F568F35D2D010BF416CBC731BC6480" />
+            <ComponentRef Id="cmpCBE4E24B149F839D6CB731B12EDAC4A3" />
+            <ComponentRef Id="cmpDDBEB18EDA6EFE5E9F24A1A141A7B2F5" />
+            <ComponentRef Id="cmpAD3E7E76290190918FBBB102CA5586E8" />
+            <ComponentRef Id="cmpC681A7AF116B22A0D7232F87C4268DE4" />
+            <ComponentRef Id="cmp9487A166196A5DE920A150F4B9D0AAD7" />
+            <ComponentRef Id="cmpB7FC677810A999ADFDB97C3A6479ABA1" />
+            <ComponentRef Id="cmp0B18DD9842A03C5DA57C5E387A8B6E39" />
+            <ComponentRef Id="cmp9F19AAF72E0F578807F5E3302563951C" />
+            <ComponentRef Id="cmp8A9214A7A30C701D9C807061D85E2E49" />
+            <ComponentRef Id="cmp5EDDC4C1501F5004BBE021AADC83E22D" />
+            <ComponentRef Id="cmp5A1E85A15E3CDDD9D1AEA4ADAF1103EE" />
+            <ComponentRef Id="cmp9E47050A139116B3EAF8850A1C7926BE" />
+            <ComponentRef Id="cmpB952DB5CC07F6D8276C6D603884CD46B" />
+            <ComponentRef Id="cmpEF93E4399551704E2B12EDD950C48C79" />
+            <ComponentRef Id="cmp24D646A3395DE0EE31177291691D73A9" />
+            <ComponentRef Id="cmp219EFD553458E5B2546578E0C60327D3" />
+            <ComponentRef Id="cmp7600B7B106B9963BD9058A5792D726EC" />
+            <ComponentRef Id="cmp1282F78416482EE34111C07A7188E4C7" />
+            <ComponentRef Id="cmpF3BA975749B4D3D7D3ED3F64D8D9C095" />
+            <ComponentRef Id="cmpA8D28B3EDB40CCA3A28D8C003B535DF1" />
+            <ComponentRef Id="cmpD20EE210D0D0F26150823776C405716E" />
+            <ComponentRef Id="cmp6CB8418A846483BE964B780B68EAACCC" />
+            <ComponentRef Id="cmp38C78EE7BA578737F2611EF4D1B8FC55" />
+            <ComponentRef Id="cmp58A70E03C34DE06B4D56DF62714B3DFB" />
+            <ComponentRef Id="cmp329AE01EEF3CEBB20791C4E707252B62" />
+            <ComponentRef Id="cmp26869B047E3DCB1139B7F3B41103744D" />
+            <ComponentRef Id="cmpC87CA41C15EC6CF36C63E62AB76D86B7" />
+            <ComponentRef Id="cmp8159736EF73A7A51A03EA400A6D37903" />
+            <ComponentRef Id="cmp3E2C4B9144EBD7D758AB54992F9C11C3" />
+            <ComponentRef Id="cmp29687A43CF092F53EF7C825B7C6AA66B" />
+            <ComponentRef Id="cmp0F105F6E77F781C63EFB4621B519E3FB" />
+            <ComponentRef Id="cmp503A8D7A2B909651ADBAC96E0C5909E9" />
+            <ComponentRef Id="cmpF5331729BB3DE27A2443FADC4DD8E0A1" />
+            <ComponentRef Id="cmp43ECF42A3AB8276FD40976F806ECA31D" />
+            <ComponentRef Id="cmpD3896B300E06049B8C1F31674BFE9317" />
+            <ComponentRef Id="cmp8FAB154E0BD1CA755CC0FA80CAC6EB8C" />
+            <ComponentRef Id="cmp2D2D7E48FE00F9206D485F6B539541FC" />
+            <ComponentRef Id="cmp74E4BEA148D87FD21E3C83AC3472FFBC" />
+            <ComponentRef Id="cmpCC960969C65B1D16856FE40E65E34523" />
+            <ComponentRef Id="cmpE6D32642943D6053C87116A15707B56D" />
+            <ComponentRef Id="cmp6169B8F307F6331DEA91A6BE2E89A29D" />
+            <ComponentRef Id="cmpBA5E337CEC25372D19A3E52F5EF1BFE6" />
+            <ComponentRef Id="cmpE7E385856527AC71DEBDFDE2008FEFA6" />
+            <ComponentRef Id="cmpB77CBD3A5CF4AC170AE1ECCF403B95AE" />
+            <ComponentRef Id="cmp2857CC9AA25276189FD446DF19F8627F" />
+            <ComponentRef Id="cmpA32D448DD3DBE0CBAA2F9CB69B756B6D" />
+            <ComponentRef Id="cmp36BD3126E1A8689CE76D2499DD558ABC" />
+            <ComponentRef Id="cmpDBFB017B0E481FC82C0EE808118E7A9A" />
+            <ComponentRef Id="cmpEA22D79FC3332F9F108CF3461A2FDA7C" />
+            <ComponentRef Id="cmpE37C7366A33246DB5B5114DDB7FE1612" />
+            <ComponentRef Id="cmpA9F791696DD5BFD70B48AB2B7FEBA488" />
+            <ComponentRef Id="cmpF303094E9B1F4BCA5168DCED1B8E9B5E" />
+            <ComponentRef Id="cmpD0340E5EF6512C781BF0877EE91C4336" />
+            <ComponentRef Id="cmp292553A0A104F75C43E639465BDC534B" />
+            <ComponentRef Id="cmp28DCF93F60803CBFA8EEB5E2A0E36560" />
+            <ComponentRef Id="cmp897266B90375CE569860C20E88308CF1" />
+            <ComponentRef Id="cmpDBFDDF86FD5CFBAB8A3EF3033A330DEB" />
+            <ComponentRef Id="cmp7AEDE81D760E8D4B83CABCBFE4121B25" />
+            <ComponentRef Id="cmp49D981A404DFD4B81231F722A60AB45E" />
+            <ComponentRef Id="cmpBB506C59E039FBA5DF9D4DB32B6FA97B" />
+            <ComponentRef Id="cmp4A62ED2C3826E310F02550380B759718" />
+            <ComponentRef Id="cmp587DE23F35E3E6AB21AACEC017311FFE" />
+            <ComponentRef Id="cmp2E40035B0D288B3EEAC1581CB85EF24F" />
+            <ComponentRef Id="cmp47822ED450B468F17B48A2E49E84F91C" />
+            <ComponentRef Id="cmp59C3EF25C511869E3E01A0088013C892" />
+            <ComponentRef Id="cmpB6A551B93EC72376C6BE46C47E797383" />
+            <ComponentRef Id="cmpD30501201BDE995E11DEA92AD6FB80A1" />
+            <ComponentRef Id="cmpB8DE29A72FC194C2492A86CCBAC9E91B" />
+            <ComponentRef Id="cmp6B55BD828757951B2E8D7E6DA3E475BA" />
+            <ComponentRef Id="cmp9325B1F4DC7FED7FE0016F65381A44D4" />
+            <ComponentRef Id="cmp2D7E2F7B406C302BC716318334C15D4B" />
+            <ComponentRef Id="cmpA2FC3D32C787BB36AD9F828C8D58C0B1" />
+            <ComponentRef Id="cmpDC7FC5CD934A2C8DA94D82E5D62B9C7F" />
+            <ComponentRef Id="cmp18C0988E55792681A4A8B8454A3D01BA" />
+            <ComponentRef Id="cmpA92A3DF00609A91B0B04AEB5CCAB8A75" />
+            <ComponentRef Id="cmp78C005BEDC991CD73C2211CE2FF545BF" />
+            <ComponentRef Id="cmpDFF3F959D73400BDC2BCD45544AA69B3" />
+            <ComponentRef Id="cmpC0F24E6419E66454754F645A5CD42BB2" />
+            <ComponentRef Id="cmpB10F44C83F1685697E2DC01F118C8265" />
             <ComponentRef Id="cmpBE44D3EFF24DBD44860236BECF8B7F05" />
             <ComponentRef Id="cmpA78CB1BD1DD1561AD8290BEF7F6AF0A7" />
             <ComponentRef Id="cmpECACABF19EB99B1DE3B568E7AB89F521" />
-            <ComponentRef Id="cmpCFC9C01501BF19BB148E6D39E2807BF7" />
-            <ComponentRef Id="cmpC84FEE6BAFC39B15C2525A1B9B1D63F5" />
-            <ComponentRef Id="cmp70D5EDAC46034EA106AC2CAF07D41D15" />
-            <ComponentRef Id="cmp9E8B7DC0C1393CD705EDE0C83277C70F" />
-            <ComponentRef Id="cmp3090404AD839A5299E796796CF663B6C" />
         </ComponentGroup>
     </Fragment>
 </Wix>
