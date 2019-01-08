@@ -15,7 +15,7 @@
 	<Product Id="$(var.ProductCode)" 
            Name="!(loc.ProductNameFolder)" 
            Language="!(loc.Language)" 
-           Version="7.0.0.0" 
+           Version="7.1.0.0" 
            Manufacturer="!(loc.Company)" 
            UpgradeCode="$(var.UpgradeCode)">
     
