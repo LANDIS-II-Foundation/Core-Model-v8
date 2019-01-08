@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>19b85a59-44b3-4852-8af8-19cb83b4ec44</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>LANDIS-II-7.0-setup64</OutputName>
+    <OutputName>LANDIS-II-7.1-setup64</OutputName>
     <OutputType>Package</OutputType>
     <Name>Landis_Installer</Name>
   </PropertyGroup>
