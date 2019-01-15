@@ -21,7 +21,7 @@
     <PackageReference Include="Landis.Core.Implementation" Version="2.0.0" />
     <PackageReference Include="Landis.Landscapes" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO" Version="2.0.0" />
-    <PackageReference Include="Landis.RasterIO.Gdal" Version="2.0.0" />
+    <PackageReference Include="Landis.RasterIO.Gdal" Version="2.1.0" />
     <PackageReference Include="Landis.SpatialModeling" Version="2.0.0" />
     <PackageReference Include="Landis.Utilities" Version="2.0.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
