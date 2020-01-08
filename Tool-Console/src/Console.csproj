@@ -17,23 +17,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Landis.Core" Version="2.0.0" />
+    <PackageReference Include="Landis.Core" Version="2.0.1" />
     <PackageReference Include="Landis.Core.Implementation" Version="2.0.0" />
     <PackageReference Include="Landis.Landscapes" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO" Version="2.0.0" />
-    <PackageReference Include="Landis.RasterIO.Gdal" Version="2.1.0" />
     <PackageReference Include="Landis.SpatialModeling" Version="2.0.0" />
     <PackageReference Include="Landis.Utilities" Version="2.0.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0-rc1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
     <PackageReference Include="System.Threading" Version="4.3.0" />
     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
     <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
     <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
-    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
-    <PackageReference Include="Troschuetz.Random" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+    <PackageReference Include="Troschuetz.Random" Version="4.3.1" />
   </ItemGroup>
 
    <ItemGroup>

@@ -5,12 +5,10 @@ using System.Configuration;
 using System.IO;
 using System.Reflection;
 using System.Text;
-
 using Landis.Core;
 using Landis.Landscapes;
-using Landis.RasterIO.Gdal;
+using Landis.RasterIO;
 using Landis.SpatialModeling;
-
 
 //[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
@@ -92,9 +90,10 @@ namespace Landis
                 //string path = Environment.GetEnvironmentVariable("PATH");
                 //string newPath = "C:\\Program Files\\LANDIS-II\\GDAL\\1.9;" + path;
                 //Environment.SetEnvironmentVariable("PATH", newPath);
-                RasterFactory rasterFactory = new RasterFactory();
+                string appDir = Application.Directory;
+                DriverManager driverManager = new DriverManager(Path.Combine(appDir, "raster-drivers.xml"));
                 LandscapeFactory landscapeFactory = new LandscapeFactory();
-                Model model = new Model(extensions, rasterFactory, landscapeFactory);
+                Model model = new Model(extensions, driverManager, landscapeFactory);
                 model.Run(args[0], ci);
                 return 0;
             }
