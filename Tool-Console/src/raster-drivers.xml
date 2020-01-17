@@ -2,7 +2,7 @@
 <RasterDriverDataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Drivers>
     <Driver Name="Erdas 7.4">
-      <ImplementationName>Landis.RasterIO.Drivers.Erdas74.Driver,Landis.RasterIO.Drivers.Erdas74</ImplementationName>
+      <ImplementationName>Landis.RaserIO.Erdas74.ErdasDriver,Landis.RaserIO.Erdas74</ImplementationName>
       <Formats>
         <Format Extension=".gis" Access="ReadWrite" />
         <Format Extension=".lan" Access="ReadWrite" />
