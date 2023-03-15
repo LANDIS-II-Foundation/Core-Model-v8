@@ -1,19 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Fragment>
         <DirectoryRef Id="Commands">
-            <Component Id="cmpB029FEC953C355B7B3B90037FAD4C1F1" Guid="{751F4EC0-0FF6-4DD5-8006-739AEF9E1207}">
-                <File Id="fil363757F065AAC13D1E4E81CB5C380689" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-7.cmd" />
+            <Component Id="cmpD5aeG5H8l0c_QwQ1gOroqlRUBN0" Guid="{01F7766F-9719-4A43-A986-597CD7BBBB65}">
+                <File Id="filLnt5_pKc6sFbVxGdQjZqeZ8wG.g" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-8.cmd" />
             </Component>
-            <Component Id="cmp85986758FADEB24C2F6AA33E87A5B7C5" Guid="{C47C3816-D5DC-4219-8882-5E8964CDC33E}">
-                <File Id="fil7682CAD1EC6A221BB63E9F5FD07B228D" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-extensions.cmd" />
+            <Component Id="cmpubr96yXG44eUVseul_6sG1iRpKA" Guid="{00B4E221-C63E-4C78-8D5D-7681DC94172D}">
+                <File Id="fileHrmgQXn6kb8Vx2Hi6vMEPES46M" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-extensions.cmd" />
             </Component>
         </DirectoryRef>
     </Fragment>
     <Fragment>
         <ComponentGroup Id="CommandComponents">
-            <ComponentRef Id="cmpB029FEC953C355B7B3B90037FAD4C1F1" />
-            <ComponentRef Id="cmp85986758FADEB24C2F6AA33E87A5B7C5" />
+            <ComponentRef Id="cmpD5aeG5H8l0c_QwQ1gOroqlRUBN0" />
+            <ComponentRef Id="cmpubr96yXG44eUVseul_6sG1iRpKA" />
         </ComponentGroup>
     </Fragment>
 </Wix>

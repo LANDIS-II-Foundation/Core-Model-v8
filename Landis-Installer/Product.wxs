@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
-     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
 
   <!-- Give product a unique Id per platform.  Change when product version changed-->
   <?if $(var.Platform)=x64 ?>
@@ -12,63 +10,50 @@
     <!-- Fixed upgrade Id. DO NOT CHANGE!! -->
   <?define UpgradeCode = "{74D10CF9-0FD0-4F6D-8879-64E5D479D6BA}"?>
   
-	<Product Id="$(var.ProductCode)" 
-           Name="!(loc.ProductNameFolder)" 
-           Language="!(loc.Language)" 
-           Version="7.1.0.0" 
-           Manufacturer="!(loc.Company)" 
-           UpgradeCode="$(var.UpgradeCode)">
+	<Package Name="!(loc.ProductNameFolder)" Language="!(loc.Language)" Version="8.0.0.0" Manufacturer="!(loc.Company)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="$(var.ProductCode)">
     
-		<Package 
-      InstallerVersion="200"
-      Compressed="yes"
-      InstallScope="perMachine"
-      Platform="$(var.Platform)"
-      Manufacturer="!(loc.Company)"
-      Description="!(loc.Description)"
-      Comments="!(loc.Comments)"
-      Languages="!(loc.Language)" />
+		<SummaryInformation Manufacturer="!(loc.Company)" Description="!(loc.Description)" />
 
     <!-- Downgrade error message -->
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
 
     <!-- Include .cab file into .msi file -->
-    <MediaTemplate EmbedCab="yes"/>
+    <MediaTemplate EmbedCab="yes" />
     
-    <Property Id="ARPURLINFOABOUT">http://www.landis-ii.org</Property>
+    <Property Id="ARPURLINFOABOUT" Value="http://www.landis-ii.org" />
 
-    <UIRef Id="WixUI_Minimal" />
-    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\license\LANDIS-II_Binary_license.rtf"/>
+    <ui:WixUI Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\license\LANDIS-II_Binary_license.rtf" />
    
     
     <!-- *** Define components, shortcuts, files etc... for installer *** -->
-		<Feature Id="ProductFeature" Title="LANDIS-II-v7" Level="1">
+		<Feature Id="ProductFeature" Title="LANDIS-II-v8" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
-      <ComponentGroupRef Id="LandisComponents"/>
-      <ComponentRef Id="Extensions"/> 
-      <ComponentGroupRef Id="CommandComponents"/>
-      <ComponentGroupRef Id="LicenseComponents"/>
+      <ComponentGroupRef Id="LandisComponents" />
+      <ComponentRef Id="Extensions" /> 
+      <ComponentGroupRef Id="CommandComponents" />
+      <ComponentGroupRef Id="LicenseComponents" />
       <!--<ComponentGroupRef Id="RuntimeWinCoreComponents"/>-->
     </Feature>
-  </Product>
+  </Package>
   
   
   <!-- *** Directories *** -->
-	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
+	<Fragment><!-- Root Directory -->
+	
 
       <?if $(var.Platform)=x64 ?>
-      <Directory Id="ProgramFiles64Folder">
+      <StandardDirectory Id="ProgramFiles64Folder">
         <!-- "LANDIS-II-v7" folder-->
-        <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)" >
-          <Directory Id="ReleaseVersion" Name="v7">
-            <Directory Id="RuntimeWinCore" Name="runtimes"/>
+        <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)">
+          <Directory Id="ReleaseVersion" Name="v8">
+            <Directory Id="RuntimeWinCore" Name="runtimes" />
           </Directory>
           
           <Directory Id="Extensions" Name="extensions">
             <Component Id="Extensions" Guid="{74F4D465-79C4-4E7B-A02F-5D15EC0609C8}" KeyPath="yes">
               <CreateFolder>
-                <util:PermissionEx User="Users" GenericAll="yes"/>
+                <util:PermissionEx User="Users" GenericAll="yes" />
               </CreateFolder>
             </Component>
           </Directory>
@@ -78,17 +63,16 @@
           <Directory Id="License" Name="license" />
             
         </Directory>
-      </Directory>
+      </StandardDirectory>
       <?else?>
-        <Directory Id="ProgramFilesFolder">
-          <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)" >
-            <Directory Id="ReleaseVersion" Name="v7" />
+        <StandardDirectory Id="ProgramFilesFolder">
+          <Directory Id="INSTALLFOLDER" Name="!(loc.ProductNameFolder)">
+            <Directory Id="ReleaseVersion" Name="v8" />
           </Directory>
-        </Directory>
+        </StandardDirectory>
       <?endif?>
     
-		</Directory> <!-- Root Directory -->
-	</Fragment>
+		</Fragment>
   
   
 
@@ -99,8 +83,8 @@
 			<!-- <Component Id="ProductComponent"> -->
 				<!-- TODO: Insert files, registry keys, and other resources here. -->
 			<!-- </Component> -->
-      <ComponentRef Id="PathComponent"/>
-      <ComponentRef Id="LicenseComponent"/>
+      <ComponentRef Id="PathComponent" />
+      <ComponentRef Id="LicenseComponent" />
 		</ComponentGroup>
     
     <DirectoryRef Id="Commands">
@@ -113,7 +97,7 @@
     <DirectoryRef Id="License">
       <Component Id="LicenseComponent" Guid="{E2025D14-C890-472D-96F5-88E3F0E5D25B}" KeyPath="yes">
         <CreateFolder />
-        <Environment Id="LicensePath" Name="LicensePath" Value="[License]" Permanent="no" Part="last" Action="set" System="yes"/>
+        <Environment Id="LicensePath" Name="LicensePath" Value="[License]" Permanent="no" Part="last" Action="set" System="yes" />
       </Component>
     </DirectoryRef>    
 	</Fragment>

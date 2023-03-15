@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension_Admin", "Tool-Extension-Admin\src\Extension_Admin.csproj", "{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Tool-Console\src\Console.csproj", "{9C378086-75E1-4A41-9D7A-3E5F7798B91A}"
+EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "Landis_Installer", "Landis-Installer\Landis_Installer.wixproj", "{19B85A59-44B3-4852-8AF8-19CB83B4EC44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A} = {9C378086-75E1-4A41-9D7A-3E5F7798B91A}
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A} = {BEEAD289-53E3-4250-A9C5-1D8DAF61815A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Debug|x64.Build.0 = Debug|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Release|x64.ActiveCfg = Release|Any CPU
+		{BEEAD289-53E3-4250-A9C5-1D8DAF61815A}.Release|x64.Build.0 = Release|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C378086-75E1-4A41-9D7A-3E5F7798B91A}.Release|x64.Build.0 = Release|Any CPU
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Debug|Any CPU.Build.0 = Debug|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Debug|x64.ActiveCfg = Debug|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Debug|x64.Build.0 = Debug|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Release|Any CPU.ActiveCfg = Release|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Release|Any CPU.Build.0 = Release|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Release|x64.ActiveCfg = Release|x64
+		{19B85A59-44B3-4852-8AF8-19CB83B4EC44}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA3D3B12-2BB5-4E6C-A36B-7AE70B3E8BA5}
+	EndGlobalSection
+EndGlobal

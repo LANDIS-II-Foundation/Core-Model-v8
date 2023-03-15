@@ -7,6 +7,7 @@ set EXTENSION=%cd%\Tool-Extension-Admin\src\Extension_Admin.csproj
 set BUILD_DIR=%cd%\build
 set DEPLOY_DIR=%BUILD_DIR%\Release\publish
 set EXTENSION_BUILD_DIR=%cd%\Tool-Extension-Admin\src\bin\Release
+set CONSOLE_BUILD_DIR=%cd%\Tool-Console\src\bin\Release
 
 
 rem Build Tool-Console
@@ -24,6 +25,13 @@ dotnet build %EXTENSION% -c Release
 
 rem copy files in deploy
 pushd %EXTENSION_BUILD_DIR%
+for /r %%a in (*) do (
+copy "%%a" %DEPLOY_DIR%"\%%~nxa"
+)
+popd
+
+rem copy console files
+pushd %CONSOLE_BUILD_DIR%
 for /r %%a in (*) do (
 copy "%%a" %DEPLOY_DIR%"\%%~nxa"
 )

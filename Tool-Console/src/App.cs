@@ -23,6 +23,7 @@ namespace Landis
         {
             try
             {
+                System.Console.ReadLine();
                 // The log4net section in the application's configuration file
                 // requires the environment variable WORKING_DIR be set to the
                 // current working directory.
@@ -40,7 +41,7 @@ namespace Landis
 
                 ConsoleInterface ci = new ConsoleInterface();
 
-                ci.TextWriter = Console.Out;
+                ci.TextWriter = System.Console.Out;
 
                 string version = GetAppSetting("version");
                 if (version == "")
@@ -125,6 +126,7 @@ namespace Landis
 
         public static string GetAppSetting(string settingName)
         {
+
             string setting = ConfigurationManager.AppSettings[settingName];
             if (setting == null)
                 throw new Exception("The application setting \"" + settingName + "\" is not set");

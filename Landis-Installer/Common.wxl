@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+﻿<WixLocalization Culture="en-us" xmlns="http://wixtoolset.org/schemas/v4/wxl">
 
-  <String Id="Company">LANDIS-II Foundation</String>
+  <String Id="Company" Value="LANDIS-II Foundation" />
 
-  <String Id="ProductNameFolder">LANDIS-II-v7</String>
+  <String Id="ProductNameFolder" Value="LANDIS-II-v8" />
 
-  <String Id="LandisIIv7_x64">LANDIS-II-v7 (64 bit)</String>
+  <String Id="LandisIIv8_x64" Value="LANDIS-II-v8 (64 bit)" />
 
-  <String Id="Description">LANDIS-II .NET Standard 2.0</String>
-  <String Id="Comments">Only installed on Windows 10 since GDAL doesn't support .NET Core for older Windows OS.</String>
+  <String Id="Description" Value="LANDIS-II .NET 6.0" />
+  <String Id="Comments" Value="Only installed on Windows 10 since GDAL doesn't support .NET Core for older Windows OS." />
 
-  <String Id="Language">1033</String>
+  <String Id="Language" Value="1033" />
 
-  <String Id="DowngradeErrorMessage">A newer version of LANDIS-II-v7 is already installed.</String>
+  <String Id="DowngradeErrorMessage" Value="A newer version of LANDIS-II-v8 is already installed." />
   
 </WixLocalization>
