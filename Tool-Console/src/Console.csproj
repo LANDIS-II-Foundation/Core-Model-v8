@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Landis.Core" Version="2.0.0" />
-    <PackageReference Include="Landis.Core.Implementation" Version="2.0.0" />
+    <PackageReference Include="Landis.Core" Version="3.0.0" />
+    <PackageReference Include="Landis.Core.Implementation" Version="3.0.0" />
     <PackageReference Include="Landis.Landscapes" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO.Gdal" Version="2.0.0" />
@@ -46,6 +46,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Tool-Extension-Admin\src\Extension_Admin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Landis.Library.Metadata-v2">
+      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

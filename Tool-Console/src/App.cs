@@ -95,7 +95,7 @@ namespace Landis
                 //Environment.SetEnvironmentVariable("PATH", newPath);
                 RasterFactory rasterFactory = new RasterFactory();
                 LandscapeFactory landscapeFactory = new LandscapeFactory();
-                Model model = new Model(extensions, rasterFactory, landscapeFactory);
+                Model model = new Model(extensions, rasterFactory, landscapeFactory, version);
                 model.Run(args[0], ci);
                 return 0;
             }
