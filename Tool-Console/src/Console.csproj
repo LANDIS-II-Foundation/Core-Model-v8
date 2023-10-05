@@ -26,6 +26,7 @@
   <ItemGroup>
     <PackageReference Include="Landis.Core" Version="3.0.0" />
     <PackageReference Include="Landis.Core.Implementation" Version="3.0.0" />
+    <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.1" />
     <PackageReference Include="Landis.Landscapes" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO" Version="2.0.0" />
     <PackageReference Include="Landis.RasterIO.Gdal" Version="2.0.0" />
