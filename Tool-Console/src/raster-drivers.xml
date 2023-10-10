@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RasterDriverDataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Drivers>
-    <Driver Name="Erdas 7.4">
-      <ImplementationName>Landis.RasterIO.Erdas74.ErdasDriver,Landis.RasterIO.Erdas74</ImplementationName>
+    <ErdasDriver Name="Erdas 7.4">
+      <ImplementationName>Landis.RasterIO.Erdas74.ErdasDriver,Landis.RasterIO</ImplementationName>
       <Formats>
         <Format Extension=".gis" Access="ReadWrite" />
         <Format Extension=".lan" Access="ReadWrite" />
       </Formats>
-    </Driver>
+    </ErdasDriver>
   </Drivers>
   <Formats>
     <Format Extension=".gis">
       <Drivers>
-        <Driver>Erdas 7.4</Driver>
+        <ErdasDriver>Erdas 7.4</ErdasDriver>
       </Drivers>
     </Format>
     <Format Extension=".lan">
       <Drivers>
-        <Driver>Erdas 7.4</Driver>
+        <ErdasDriver>Erdas 7.4</ErdasDriver>
       </Drivers>
     </Format>
   </Formats>
