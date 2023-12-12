@@ -1,10 +1,10 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Fragment>
         <DirectoryRef Id="Commands">
-            <Component Id="cmpD5aeG5H8l0c_QwQ1gOroqlRUBN0" Guid="{01F7766F-9719-4A43-A986-597CD7BBBB65}">
+            <Component Id="cmpD5aeG5H8l0c_QwQ1gOroqlRUBN0" Guid="{6D245357-1EE8-459E-9ECF-D667BA937CF1}">
                 <File Id="filLnt5_pKc6sFbVxGdQjZqeZ8wG.g" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-8.cmd" />
             </Component>
-            <Component Id="cmpubr96yXG44eUVseul_6sG1iRpKA" Guid="{00B4E221-C63E-4C78-8D5D-7681DC94172D}">
+            <Component Id="cmpubr96yXG44eUVseul_6sG1iRpKA" Guid="{2BEFFD35-8D42-4EE0-854F-9DC7F3BFE345}">
                 <File Id="fileHrmgQXn6kb8Vx2Hi6vMEPES46M" KeyPath="yes" Source="$(var.CommandsPath)\landis-ii-extensions.cmd" />
             </Component>
         </DirectoryRef>

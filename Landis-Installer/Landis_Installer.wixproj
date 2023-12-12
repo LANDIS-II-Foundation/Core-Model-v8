@@ -1,4 +1,4 @@
-<Project>
+﻿<Project>
   <Import Project="Sdk.props" Sdk="WixToolset.Sdk" Version="4.0.0-rc.3" />
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -14,6 +14,7 @@
     <OutputPath>..\deploy\installer\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ExtensionFile.wxs" />
     <Compile Include="Product.wxs" />
     <Compile Include="LandisFiles.wxs" />
     <Compile Include="CommandFiles.wxs" />
@@ -43,11 +44,13 @@
         BasePath=..\build\$(Configuration)\net6.0;
         CommandsPath=..\build\commands;
         LicensePath=..\build\license;
+        ExtensionPath=..\build\extensions;
       </DefineConstants>
     </PropertyGroup>
     <HeatDirectory OutputFile="LandisFiles.wxs" DirectoryRefId="ReleaseVersion" ComponentGroupName="LandisComponents" SuppressCom="true" Directory="..\build\$(Configuration)\net6.0" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" />
     <HeatDirectory OutputFile="CommandFiles.wxs" DirectoryRefId="Commands" ComponentGroupName="CommandComponents" SuppressCom="true" Directory="..\build\commands" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.CommandsPath" />
     <HeatDirectory OutputFile="LicenseFile.wxs" DirectoryRefId="License" ComponentGroupName="LicenseComponents" SuppressCom="true" Directory="..\build\license" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.LicensePath" />
+    <HeatDirectory OutputFile="ExtensionFile.wxs" DirectoryRefId="Extensions" ComponentGroupName="ExtensionComponents" SuppressCom="true" Directory="..\build\extensions" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.ExtensionPath" />
   </Target>
   <Target Name="AfterBuild">
   </Target>

@@ -30,7 +30,7 @@
 		<Feature Id="ProductFeature" Title="LANDIS-II-v8" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
       <ComponentGroupRef Id="LandisComponents" />
-      <ComponentRef Id="Extensions" /> 
+      <ComponentGroupRef Id="ExtensionComponents" /> 
       <ComponentGroupRef Id="CommandComponents" />
       <ComponentGroupRef Id="LicenseComponents" />
       <!--<ComponentGroupRef Id="RuntimeWinCoreComponents"/>-->
@@ -50,13 +50,7 @@
             <Directory Id="RuntimeWinCore" Name="runtimes" />
           </Directory>
           
-          <Directory Id="Extensions" Name="extensions">
-            <Component Id="Extensions" Guid="{74F4D465-79C4-4E7B-A02F-5D15EC0609C8}" KeyPath="yes">
-              <CreateFolder>
-                <util:PermissionEx User="Users" GenericAll="yes" />
-              </CreateFolder>
-            </Component>
-          </Directory>
+          <Directory Id="Extensions" Name="extensions"/>
           
           <Directory Id="Commands" Name="commands" />
 
@@ -85,6 +79,7 @@
 			<!-- </Component> -->
       <ComponentRef Id="PathComponent" />
       <ComponentRef Id="LicenseComponent" />
+      <ComponentRef Id="ExtensionComponent"/>
 		</ComponentGroup>
     
     <DirectoryRef Id="Commands">
@@ -99,6 +94,13 @@
         <CreateFolder />
         <Environment Id="LicensePath" Name="LicensePath" Value="[License]" Permanent="no" Part="last" Action="set" System="yes" />
       </Component>
-    </DirectoryRef>    
+    </DirectoryRef>
+  
+  <DirectoryRef Id="Extensions">
+      <Component Id="ExtensionComponent" Guid="{E5625D14-C890-472D-96F5-88E3F0E5D25B}" KeyPath="yes">
+        <CreateFolder />
+        <Environment Id="ExtensionPath" Name="ExtensionPath" Value="[Extensions]" Permanent="no" Part="last" Action="set" System="yes" />
+      </Component>
+    </DirectoryRef>   
 	</Fragment>
 </Wix>
