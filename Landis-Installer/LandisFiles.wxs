@@ -1,118 +1,118 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Fragment>
         <DirectoryRef Id="ReleaseVersion">
-            <Component Id="cmpMhORITgdY.1xV7loqMYytTBeJ2k" Guid="{E1C66129-C739-4BD7-98F6-CBD768CE6206}">
+            <Component Id="cmpMhORITgdY.1xV7loqMYytTBeJ2k" Guid="{8AE938DA-AEE0-40A3-9BD6-6BC89017FAA0}">
                 <File Id="filSjAHHNzHaeVfcXK.SfpemzHbQik" KeyPath="yes" Source="$(var.BasePath)\app.config" />
             </Component>
-            <Component Id="cmpgBMQrYMxh4JvgbWoZZZv_9ObHKA" Guid="{B5806F7F-E529-4969-AB62-ABC59D9A62E7}">
+            <Component Id="cmpgBMQrYMxh4JvgbWoZZZv_9ObHKA" Guid="{9A946E93-AE83-4387-A517-E6849B042812}">
                 <File Id="filJ4RZeXKUvKJ2RK.0VmRt2Z1yMLU" KeyPath="yes" Source="$(var.BasePath)\Gdal.Core.dll" />
             </Component>
-            <Component Id="cmp2LW57P7NSYiuh4BJWKIxe4Ud5V4" Guid="{D3AF1C13-1DD5-4FFA-B239-99805213BDAD}">
+            <Component Id="cmp2LW57P7NSYiuh4BJWKIxe4Ud5V4" Guid="{ABF0BBE4-ED44-4D6A-9860-BDC11BF20711}">
                 <File Id="filOTZCMG6gCuckdwXZ8d6S_11lv0E" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.deps.json" />
             </Component>
-            <Component Id="cmpogx87jRvxAtNFqbqcs9iGebLRWU" Guid="{7AB27F46-E70D-478D-972E-DBF1D758D95C}">
+            <Component Id="cmpogx87jRvxAtNFqbqcs9iGebLRWU" Guid="{5394B667-DDA9-4335-B993-C02243295C97}">
                 <File Id="fil20ODPVm31gePZ4FmO6.FrPEyxg4" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.dll" />
             </Component>
-            <Component Id="cmpnK5TT373nGU12vFba2TLs6TcN_k" Guid="{EE7EBE1D-015E-48AD-8323-4DDBC43B80F1}">
+            <Component Id="cmpnK5TT373nGU12vFba2TLs6TcN_k" Guid="{11F2F0B5-15F1-42FF-AC5C-FF490EC5EFDD}">
                 <File Id="filuIQDkSaXIrCfSWG9Tdv0NvDPlR8" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.dll.config" />
             </Component>
-            <Component Id="cmpN7DBEecwT.CzQtXqd039llm8.R0" Guid="{D7C7542C-B0E1-4857-AF11-41074C5B03B1}">
+            <Component Id="cmpN7DBEecwT.CzQtXqd039llm8.R0" Guid="{B5E23E74-D655-4F31-A6A1-0C612C782177}">
                 <File Id="fil42blrGZ9bbGHj26cuVmd7XQJjug" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.exe" />
             </Component>
-            <Component Id="cmpBg.v_nSjD5j.Cdh0uigOeFjZaiE" Guid="{9D00FC93-95FC-4F6F-8EDE-C582EE7D0B56}">
+            <Component Id="cmpBg.v_nSjD5j.Cdh0uigOeFjZaiE" Guid="{31E5F45C-5A2C-4C1F-9369-15E143903D04}">
                 <File Id="filzx.L7mz9q_UMNrMF3Fpx6haN7YQ" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.pdb" />
             </Component>
-            <Component Id="cmpFPCOAGKEwQO_STR5wOPZiynPDbM" Guid="{6E04B947-0406-474B-8316-CC23A49B0AC9}">
+            <Component Id="cmpFPCOAGKEwQO_STR5wOPZiynPDbM" Guid="{5BAFDFA9-7FC3-4354-BEE2-8D05D1958920}">
                 <File Id="filj4S.Tl4T6p54GXErNfs_I6XSCQI" KeyPath="yes" Source="$(var.BasePath)\Landis.Console.runtimeconfig.json" />
             </Component>
-            <Component Id="cmpn.oUG.h_PI9FEMHbUz2rhs_Fz34" Guid="{80582CF0-4CE0-488B-AF8E-5C2BDE6B7225}">
+            <Component Id="cmpn.oUG.h_PI9FEMHbUz2rhs_Fz34" Guid="{DA7D682B-ABED-4DE6-8E49-D4C70CE6E513}">
                 <File Id="filplKh8WaIBID33SH.mGvggZQj64k" KeyPath="yes" Source="$(var.BasePath)\Landis.Core.dll" />
             </Component>
-            <Component Id="cmpGo_hvcpNsufs6DrzHaSL_kSz9Eg" Guid="{71DAAFF3-9221-4AA0-B315-ED289B7B1899}">
+            <Component Id="cmpGo_hvcpNsufs6DrzHaSL_kSz9Eg" Guid="{CE846273-F7D4-4A60-9236-A61D30018511}">
                 <File Id="filnzRnDzyNnVjoieERwjAL_zd18aU" KeyPath="yes" Source="$(var.BasePath)\Landis.Core.Implementation.dll" />
             </Component>
-            <Component Id="cmpnpFpxsOhMkkLJfYJCLowO.w2Noc" Guid="{5CC0D3FB-5E1E-4244-BDC8-D248EBA8AA08}">
+            <Component Id="cmpnpFpxsOhMkkLJfYJCLowO.w2Noc" Guid="{EB55FF62-066D-4538-BDDD-D9BF9D585C4A}">
                 <File Id="filzl0spH.PpNNxKDXkDF.9ToglOmM" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.Dataset.dll" />
             </Component>
-            <Component Id="cmptHYccIHjOJbyIksk9tqEt.4ZYdw" Guid="{26840716-EF92-4738-AEF9-6EFEFA9BE8F6}">
+            <Component Id="cmptHYccIHjOJbyIksk9tqEt.4ZYdw" Guid="{1CB3822C-9A61-4B58-90EC-6EE7598E8BF6}">
                 <File Id="fil_YcwL5SsS1ma7IGbU66WuyH1yFk" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.dll" />
             </Component>
-            <Component Id="cmpJuIShR3rIfeGqrtVNafE4Uli6Rc" Guid="{347A85D3-3BA0-48F8-8594-9DF57A766BFA}">
+            <Component Id="cmpJuIShR3rIfeGqrtVNafE4Uli6Rc" Guid="{04CC34B2-DEF4-4B8B-BA71-9319A587F1F5}">
                 <File Id="filfNGJnU3w.YzbfMaNpnUC1FTXkiI" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.dll.config" />
             </Component>
-            <Component Id="cmp8MtuZbzr4QSKZGcZdkIyjcycl3w" Guid="{2434BDA1-BA18-45C3-AD84-295F91601519}">
+            <Component Id="cmp8MtuZbzr4QSKZGcZdkIyjcycl3w" Guid="{0753FB0F-4351-4A3A-9F7B-3F3552EF0C0D}">
                 <File Id="filickzt09qKI15EVxugVsrPkiUDlA" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.exe" />
             </Component>
-            <Component Id="cmp924KwRyVV1dS8NLziqXTbNIvus4" Guid="{01175248-2298-4B92-8724-3E9CD01C4378}">
+            <Component Id="cmp924KwRyVV1dS8NLziqXTbNIvus4" Guid="{723B5D56-DC4E-4624-A7F6-723592EB5614}">
                 <File Id="filb5MKim0vb.3Yr14R1OJQaICz4yE" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.pdb" />
             </Component>
-            <Component Id="cmpF3Fd7J2JGKhkvVV7UujqyGx8az4" Guid="{BAC68311-A5DA-4080-80E0-A5DDD0EE63C8}">
+            <Component Id="cmpF3Fd7J2JGKhkvVV7UujqyGx8az4" Guid="{D69F5D5E-858D-4E98-BF1C-13FDA1980BB0}">
                 <File Id="filZP4KZSfSoZNoYVzFY98tKYNKKiQ" KeyPath="yes" Source="$(var.BasePath)\Landis.Extensions.runtimeconfig.json" />
             </Component>
-            <Component Id="cmpAiSDE5gSvCpPBy.O4shF2jc7GxA" Guid="{A687AD58-96A7-47C2-B489-D3A4509A6B80}">
+            <Component Id="cmpAiSDE5gSvCpPBy.O4shF2jc7GxA" Guid="{BB7F4057-5348-4C6D-90A2-305B5DEF7801}">
                 <File Id="filJ_W14XBDWDjlQWNHs78ChdZFprA" KeyPath="yes" Source="$(var.BasePath)\Landis.Landscapes.dll" />
             </Component>
-            <Component Id="cmpgnc6MVJK5r6xnAl7BmItckFUQ7M" Guid="{4E57DFF1-C3F5-42E6-B8B1-B806A76C670D}">
+            <Component Id="cmpgnc6MVJK5r6xnAl7BmItckFUQ7M" Guid="{B549AFA0-D45D-44FF-941F-33A7CE545ADF}">
                 <File Id="filPWE4PibcaunWs6oJHHZtsxIhGFs" KeyPath="yes" Source="$(var.BasePath)\Landis.Library.Metadata-v2.dll" />
             </Component>
-            <Component Id="cmpBwg4Q7roqwWNqcV8Bjed0VVLNzE" Guid="{C9CD8BA8-2E74-4C1B-A43C-991DDE35CA34}">
+            <Component Id="cmpBwg4Q7roqwWNqcV8Bjed0VVLNzE" Guid="{C08FE285-F34F-45A3-B4D9-C40A21266DF2}">
                 <File Id="fil6qGfxZR63tVvoXF9wn3I2k7yMb0" KeyPath="yes" Source="$(var.BasePath)\Landis.Library.Metadata-v2.pdb" />
             </Component>
-            <Component Id="cmpS5tNf6ibLgweRVNU.i400.hVd0w" Guid="{B99EA0F3-858A-4CE7-9A7E-50978DB462D3}">
+            <Component Id="cmpS5tNf6ibLgweRVNU.i400.hVd0w" Guid="{4396255D-0192-4CB2-ABCC-554A5EE0CF25}">
                 <File Id="filgE8jO5d6Bb8E598YP5qRuA64rgs" KeyPath="yes" Source="$(var.BasePath)\Landis.RasterIO.dll" />
             </Component>
-            <Component Id="cmpbGZBdVIoJjoZCDcEVxAlGwoyVZU" Guid="{24D75324-9BA6-4F7F-A9C2-DBC2CC134553}">
+            <Component Id="cmpbGZBdVIoJjoZCDcEVxAlGwoyVZU" Guid="{4007678B-4684-4150-9118-AD47D5F4B242}">
                 <File Id="fil0A.V2xoa34zqSwhnMdlMvHWdjXM" KeyPath="yes" Source="$(var.BasePath)\Landis.RasterIO.Gdal.dll" />
             </Component>
-            <Component Id="cmpEkqoFlSqcCWaomE3E2cjWBnvgjU" Guid="{B23F95DB-9876-4C61-A589-262D3581389F}">
+            <Component Id="cmpEkqoFlSqcCWaomE3E2cjWBnvgjU" Guid="{E4BB2C62-AF2A-440D-BBE6-9F2371CB7CEB}">
                 <File Id="filq.yRHsk2049NgpyVSoRhHAY1dfQ" KeyPath="yes" Source="$(var.BasePath)\Landis.SpatialModeling.dll" />
             </Component>
-            <Component Id="cmp3_rFCZXSbMVZ8B0aYcmewBslWAU" Guid="{DC1F2E5F-6048-4958-A6A3-9A7D2D050583}">
+            <Component Id="cmp3_rFCZXSbMVZ8B0aYcmewBslWAU" Guid="{E7D7E9C6-AB3A-4748-86A9-E59AEEEFC12B}">
                 <File Id="filXWPXdp3SdrtMwsOHOA3d0DO9qC4" KeyPath="yes" Source="$(var.BasePath)\Landis.Utilities.dll" />
             </Component>
-            <Component Id="cmpAApVjI1BClEvALAOcHTX6ZVB0ao" Guid="{B87E6D6A-981B-47F7-929F-37118F723EA4}">
+            <Component Id="cmpAApVjI1BClEvALAOcHTX6ZVB0ao" Guid="{4E818E80-9A73-4CEC-9766-AB79C9EE54D6}">
                 <File Id="filcaq02y_pe26XXP7gKhtiO6rficA" KeyPath="yes" Source="$(var.BasePath)\log4net.dll" />
             </Component>
-            <Component Id="cmpLqfD2ay1uzk_6RthaTKiq8YDPc0" Guid="{B6D8D61C-4872-469D-B3E7-A74711F984BB}">
+            <Component Id="cmpLqfD2ay1uzk_6RthaTKiq8YDPc0" Guid="{40A91042-C973-4512-B862-74F0A76D2EF0}">
                 <File Id="fillz19VQNQUM9fApLY1LHqwZt3jlY" KeyPath="yes" Source="$(var.BasePath)\MathNet.Numerics.dll" />
             </Component>
-            <Component Id="cmpmGPwwIHKr.GZesD.bOeQF5QC1WM" Guid="{7E9275E8-DE00-4AD4-BF23-0DF345BC23D2}">
+            <Component Id="cmpmGPwwIHKr.GZesD.bOeQF5QC1WM" Guid="{E411210D-08DD-48E5-94CD-924C21F48719}">
                 <File Id="filLl08tiAc7dzx_zVXBOhNUDgBAFY" KeyPath="yes" Source="$(var.BasePath)\Microsoft.Win32.SystemEvents.dll" />
             </Component>
-            <Component Id="cmpTKvg6yZAE_LI.hXMnpbwurF.Onc" Guid="{11452E55-A611-4A53-A7B5-6DFC3ABCC2D2}">
+            <Component Id="cmpTKvg6yZAE_LI.hXMnpbwurF.Onc" Guid="{CDA143DF-3CD4-47C1-81FB-5429A850E152}">
                 <File Id="filgDjiCFlezDBfCczOBiXY1XLxGQg" KeyPath="yes" Source="$(var.BasePath)\System.Configuration.ConfigurationManager.dll" />
             </Component>
-            <Component Id="cmpdvbR6vnVOuOx5GcN8LA3W9I1FnY" Guid="{1A5DB377-741B-44D3-BB3B-29ECAD0A3A6E}">
+            <Component Id="cmpdvbR6vnVOuOx5GcN8LA3W9I1FnY" Guid="{968AC739-0EF3-441C-967D-C8D33786196E}">
                 <File Id="filc6oDIBGj0N5NSE.f9FXBSS6G0W8" KeyPath="yes" Source="$(var.BasePath)\System.Drawing.Common.dll" />
             </Component>
-            <Component Id="cmpgjJLzulQpVzQK4lywYR8GqBrLkI" Guid="{0ADF8F0A-2C47-43BD-9172-34D98494DFCC}">
+            <Component Id="cmpgjJLzulQpVzQK4lywYR8GqBrLkI" Guid="{9C9FC027-EE57-46BE-BC24-98502F9F4664}">
                 <File Id="filEIGLXaGhlsFQ4OW4.tcAJpPIz7o" KeyPath="yes" Source="$(var.BasePath)\System.Security.Cryptography.ProtectedData.dll" />
             </Component>
-            <Component Id="cmppgWs33x515jhYMjKQ9LSQW.wXVU" Guid="{D707D29D-A291-4D21-9AC1-D16DE589AAA2}">
+            <Component Id="cmppgWs33x515jhYMjKQ9LSQW.wXVU" Guid="{789DCA1F-914E-4C08-90BA-F12992239288}">
                 <File Id="fil65TJ.N7jbmkc6FoII_xDjAEHDkM" KeyPath="yes" Source="$(var.BasePath)\System.Security.Permissions.dll" />
             </Component>
-            <Component Id="cmpbx.g4SESLCXpBvLJrXs0LvLwMkc" Guid="{BBBA8342-0269-4550-AA63-10A5E8A455B7}">
+            <Component Id="cmpbx.g4SESLCXpBvLJrXs0LvLwMkc" Guid="{D6210773-7C88-4A0C-AD80-6B642BCF9852}">
                 <File Id="fil3TO4MGyXswL1kzhv3EhvJPBf67I" KeyPath="yes" Source="$(var.BasePath)\System.Windows.Extensions.dll" />
             </Component>
-            <Component Id="cmpTUkYUARpQXFhGWEVpTeFeo0SweA" Guid="{41DAC8A5-AA4E-470D-98D8-B07022B70A11}">
+            <Component Id="cmpTUkYUARpQXFhGWEVpTeFeo0SweA" Guid="{353CB000-EA18-4993-AFF6-00D5AA76B088}">
                 <File Id="filod.qQ9TEzs4QsNJNshnh9ObwxNw" KeyPath="yes" Source="$(var.BasePath)\Troschuetz.Random.dll" />
             </Component>
             <Directory Id="dir6SaXAuVvM2mmwldSIXFhk5np2uk" Name="runtimes">
                 <Directory Id="dirm.RGtpyX6aQyPanz65bvz9aXcII" Name="linux-x64">
                     <Directory Id="dirq8nzK.39ELqHqSjn5IZemWC51DE" Name="native">
-                        <Component Id="cmpNn_xdCdrEtJ4NcyW10nxqrXU9uc" Guid="{278E750A-B8BE-4CE0-B38C-A6DC5B2BB7DE}">
+                        <Component Id="cmpNn_xdCdrEtJ4NcyW10nxqrXU9uc" Guid="{DC384ED6-4AD6-4E26-9D39-9ACA330EDEEE}">
                             <File Id="filQcHhBcsy.mTZKqgBlQmjAm0OyRg" KeyPath="yes" Source="$(var.BasePath)\runtimes\linux-x64\native\gdalconst_wrap.so" />
                         </Component>
-                        <Component Id="cmpcAjRAoALTAJKxrvpt3wxSotY9FY" Guid="{377D200D-1B61-4349-9737-B0869354F7BE}">
+                        <Component Id="cmpcAjRAoALTAJKxrvpt3wxSotY9FY" Guid="{787FA9B6-49F9-4B6D-9BDE-060E561AF60C}">
                             <File Id="fil7E6KFlIhC_TB_Rq9ckvulbtfl5U" KeyPath="yes" Source="$(var.BasePath)\runtimes\linux-x64\native\gdal_wrap.so" />
                         </Component>
-                        <Component Id="cmp5KEA3i03dudHNFwV.nISRafsqrM" Guid="{3B177712-5C38-431F-BDB0-8320E2D69593}">
+                        <Component Id="cmp5KEA3i03dudHNFwV.nISRafsqrM" Guid="{6DFCA89C-6172-4F34-85CC-58F071D7C312}">
                             <File Id="filpUN71SwIDHJ55tOJMLid5k0Vw_M" KeyPath="yes" Source="$(var.BasePath)\runtimes\linux-x64\native\libgdal.so.20" />
                         </Component>
-                        <Component Id="cmpLPTrSOS.64lNYApN7Ge6NnxMVss" Guid="{CF719461-161D-48EA-A3A5-B47EB390EF56}">
+                        <Component Id="cmpLPTrSOS.64lNYApN7Ge6NnxMVss" Guid="{6931D58F-3530-45FA-99DA-D13C4313AAA8}">
                             <File Id="filR9OSS8bSkbAJ0wpkcZrbz3YVeQA" KeyPath="yes" Source="$(var.BasePath)\runtimes\linux-x64\native\ogr_wrap.so" />
                         </Component>
-                        <Component Id="cmpDWZz4KVjbpSqQcxGzLj67LS82fc" Guid="{715BD81A-5514-4BDA-B322-1F67C16F506B}">
+                        <Component Id="cmpDWZz4KVjbpSqQcxGzLj67LS82fc" Guid="{B44B95F3-312E-4D20-A7C1-9C210490C436}">
                             <File Id="filpJ5Bf30dpBEQ34JnvCgHVN_mTeo" KeyPath="yes" Source="$(var.BasePath)\runtimes\linux-x64\native\osr_wrap.so" />
                         </Component>
                     </Directory>
@@ -120,21 +120,21 @@
                 <Directory Id="dirfjZ1UOjCNmhUNKzxwyM1puiOJxI" Name="win">
                     <Directory Id="dirookjFdxbXaEiY3utoamlOHkGzho" Name="lib">
                         <Directory Id="dird0v1lU6rvXvxXkLnaLKopt9FweE" Name="net6.0">
-                            <Component Id="cmpsNL_JPZdg7sMMl0zXdPAqATDu5M" Guid="{8F5675B7-6BF9-444D-8C9C-21C4745BCC53}">
+                            <Component Id="cmpsNL_JPZdg7sMMl0zXdPAqATDu5M" Guid="{8A912880-0D3E-40B8-BFF0-2E0CCAE3F0E3}">
                                 <File Id="filQggpI3JDmwnzq.4bwJbVdj6oTbc" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll" />
                             </Component>
-                            <Component Id="cmpSecO6cZHwP6Utl.av.edN1eygo8" Guid="{EE59B728-D757-433E-80EE-7BA3DD8B29DA}">
+                            <Component Id="cmpSecO6cZHwP6Utl.av.edN1eygo8" Guid="{002B62DD-4503-4C04-A30C-E3AF8C3EF0A1}">
                                 <File Id="filhbONwrEveTGaNV.lwCErFSe0fsA" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\net6.0\System.Drawing.Common.dll" />
                             </Component>
-                            <Component Id="cmpeW8rnwI.TEEcdJU5IthdT5hACrQ" Guid="{E50B75E4-3C83-4F5F-99C1-54C60BAF905A}">
+                            <Component Id="cmpeW8rnwI.TEEcdJU5IthdT5hACrQ" Guid="{271CA115-07BE-4B99-8384-7DFD74404E02}">
                                 <File Id="fil4rt34eOG1jOXQl9LpX62dw5qRMQ" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll" />
                             </Component>
-                            <Component Id="cmpvqTRxIuz7zy3oolQDrX2TqF9N0s" Guid="{AA7284AE-9102-445F-8987-857F49D320A0}">
+                            <Component Id="cmpvqTRxIuz7zy3oolQDrX2TqF9N0s" Guid="{614E73AB-33CC-4289-AA0E-B529D425EABC}">
                                 <File Id="filjPfmEkVQjQbx_4m9qIMCtX_mURo" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\net6.0\System.Windows.Extensions.dll" />
                             </Component>
                         </Directory>
                         <Directory Id="dirbPT8CVPCM1_MM5t6Qi6ge4Uahk4" Name="netstandard2.0">
-                            <Component Id="cmpCscEuWi31wkpw2sNsnh5b8rXOKA" Guid="{E7369CDC-E3E2-409A-97C7-5D533CF05FAE}">
+                            <Component Id="cmpCscEuWi31wkpw2sNsnh5b8rXOKA" Guid="{C0F2FD69-A114-4B41-BDA0-5F510775F64F}">
                                 <File Id="filWP9NQ3G9XNi.cCbBeJ3XNfUGNg0" KeyPath="yes" Source="$(var.BasePath)\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
                             </Component>
                         </Directory>
@@ -142,19 +142,19 @@
                 </Directory>
                 <Directory Id="dirp4RB3V7No42yY.40jfBI7QyOg6Q" Name="win10-x64">
                     <Directory Id="dirsSKhakOyrxyii_kvLONErDQce6E" Name="native">
-                        <Component Id="cmp03P9PUm9fbM9rwA4aKzxCs9Y3z4" Guid="{E14EBB38-C3CE-4C29-BE5B-9EDE0D57F26A}">
+                        <Component Id="cmp03P9PUm9fbM9rwA4aKzxCs9Y3z4" Guid="{8A25988E-DEAC-4A23-9BD8-0B7CE4A6C22F}">
                             <File Id="filoVMyIqHTh_094aWjeX0qOLRJJHU" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdal202.dll" />
                         </Component>
-                        <Component Id="cmpHzgN_6XTlZo5uBxYn6lC7i07UMY" Guid="{99B20107-7305-4E49-8CDB-0DA9ACA1177E}">
+                        <Component Id="cmpHzgN_6XTlZo5uBxYn6lC7i07UMY" Guid="{A8830E4A-FCC8-427A-9A29-1939BF1D93E0}">
                             <File Id="filYjvGfe95gZ5vUcA2UD5FIlD6uXs" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdalconst_wrap.dll" />
                         </Component>
-                        <Component Id="cmpPn7g1NnDIZZBjwvRi30P0bVXvb0" Guid="{1E260BB2-8FF5-447D-8AB7-DA0C2C40C194}">
+                        <Component Id="cmpPn7g1NnDIZZBjwvRi30P0bVXvb0" Guid="{FD48A709-8AAF-4388-9336-242495A335C8}">
                             <File Id="filuQ0Pkqj1SjVy0VXunjThBCZfNPQ" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\gdal_wrap.dll" />
                         </Component>
-                        <Component Id="cmpLXmPdajAQ229G6teDOFj_uaJ9js" Guid="{5F3151E8-B073-4BFB-84D8-D66C03FDAED3}">
+                        <Component Id="cmpLXmPdajAQ229G6teDOFj_uaJ9js" Guid="{7232F7D9-D015-48C7-962B-A5FBDE2135B5}">
                             <File Id="filcvq44J_9YVYPjEKRshOf3zO8v0Y" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\ogr_wrap.dll" />
                         </Component>
-                        <Component Id="cmprrB4XTmbwaX9dxMJ9Su3APsQ.dc" Guid="{5455CBA9-9AB6-4AA9-A663-70AB333BCF49}">
+                        <Component Id="cmprrB4XTmbwaX9dxMJ9Su3APsQ.dc" Guid="{AA4D0451-376F-41D7-8F89-64CC355108CE}">
                             <File Id="filutUqAyOODNYVI1hAXarTxls8znU" KeyPath="yes" Source="$(var.BasePath)\runtimes\win10-x64\native\osr_wrap.dll" />
                         </Component>
                     </Directory>
