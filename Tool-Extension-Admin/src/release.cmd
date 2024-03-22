@@ -8,7 +8,7 @@ for %%a in ("%~dp0..\..\") do set "SCRIPT_DIR=%%~fa"
 echo %SCRIPT_DIR%
 
 rem Delete linux-x64 and unix folder
-set BIN=%SCRIPT_DIR%build\Release\publish
+set BIN=%SCRIPT_DIR%build\Release\net8.0
 echo %BIN%
 if exist %BIN% (
 echo yes

@@ -23,7 +23,7 @@ namespace Landis
         {
             try
             {
-                System.Console.ReadLine();
+                //System.Console.ReadLine();
                 // The log4net section in the application's configuration file
                 // requires the environment variable WORKING_DIR be set to the
                 // current working directory.

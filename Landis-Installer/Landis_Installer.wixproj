@@ -35,19 +35,19 @@
   <Import Project="Sdk.targets" Sdk="WixToolset.Sdk" Version="4.0.0-rc.3" />
   <Target Name="BeforeBuild">
     <!-- Get assembly version -->
-    <GetAssemblyIdentity AssemblyFiles="..\build\$(Configuration)\net6.0\Landis.Console.dll">
+    <GetAssemblyIdentity AssemblyFiles="..\build\$(Configuration)\net8.0\Landis.Console.dll">
       <Output TaskParameter="Assemblies" ItemName="AssemblyVersion" />
     </GetAssemblyIdentity>
     <PropertyGroup>
       <DefineConstants>
         BuildVersion=%(AssemblyVersion.Version);
-        BasePath=..\build\$(Configuration)\net6.0;
+        BasePath=..\build\$(Configuration)\net8.0;
         CommandsPath=..\build\commands;
         LicensePath=..\build\license;
         ExtensionPath=..\build\extensions;
       </DefineConstants>
     </PropertyGroup>
-    <HeatDirectory OutputFile="LandisFiles.wxs" DirectoryRefId="ReleaseVersion" ComponentGroupName="LandisComponents" SuppressCom="true" Directory="..\build\$(Configuration)\net6.0" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" />
+    <HeatDirectory OutputFile="LandisFiles.wxs" DirectoryRefId="ReleaseVersion" ComponentGroupName="LandisComponents" SuppressCom="true" Directory="..\build\$(Configuration)\net8.0" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" />
     <HeatDirectory OutputFile="CommandFiles.wxs" DirectoryRefId="Commands" ComponentGroupName="CommandComponents" SuppressCom="true" Directory="..\build\commands" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.CommandsPath" />
     <HeatDirectory OutputFile="LicenseFile.wxs" DirectoryRefId="License" ComponentGroupName="LicenseComponents" SuppressCom="true" Directory="..\build\license" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.LicensePath" />
     <HeatDirectory OutputFile="ExtensionFile.wxs" DirectoryRefId="Extensions" ComponentGroupName="ExtensionComponents" SuppressCom="true" Directory="..\build\extensions" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.ExtensionPath" />

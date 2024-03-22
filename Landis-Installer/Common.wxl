@@ -6,7 +6,7 @@
 
   <String Id="LandisIIv8_x64" Value="LANDIS-II-v8 (64 bit)" />
 
-  <String Id="Description" Value="LANDIS-II .NET 6.0" />
+  <String Id="Description" Value="LANDIS-II .NET 8.0" />
   <String Id="Comments" Value="Only installed on Windows 10 since GDAL doesn't support .NET Core for older Windows OS." />
 
   <String Id="Language" Value="1033" />

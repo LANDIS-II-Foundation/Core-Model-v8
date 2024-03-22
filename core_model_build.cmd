@@ -5,7 +5,7 @@ cd %cd%
 set CONSOLE=%cd%\Tool-Console\src\Console.csproj
 set EXTENSION=%cd%\Tool-Extension-Admin\src\Extension_Admin.csproj
 set BUILD_DIR=%cd%\build
-set DEPLOY_DIR=%BUILD_DIR%\Release\net6.0
+set DEPLOY_DIR=%BUILD_DIR%\Release\net8.0
 set EXTENSION_BUILD_DIR=%cd%\Tool-Extension-Admin\src\bin\Release
 set CONSOLE_BUILD_DIR=%cd%\Tool-Console\src\bin\Release
 
@@ -15,7 +15,8 @@ dotnet publish %CONSOLE% -c Release
 echo Tool-Console publish done
 
 rem Delete linux-x64 and unix folder
-set RUNTIMES=%BUILD_DIR%\Release\publish\runtimes
+set RUNTIMES=%BUILD_DIR%\Release\net8.0\runtimes
+set WINRUNTIMES=%BUILD_DIR%\Release\net8.0\runtimes\win10-x64\native
 echo %RUNTIMES%
 @RD /s /q %RUNTIMES%\linux-x64
 @RD /s /q %RUNTIMES%\unix
