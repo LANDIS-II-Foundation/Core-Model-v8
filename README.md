@@ -1,4 +1,4 @@
-# Core-Model-v7
+# Core-Model-v8
 
 Changes to this extension are governed by the [**Repository Rules**](https://sites.google.com/site/landismodel/developers) from the Technical Advisory Committee (TAC).  The TAC are the Custodians of this repository.
 
@@ -8,4 +8,4 @@ This is the combined package and installer for the LANDIS-II 'Core'.  The Core a
 * Library-Spatial
 * Library-Utilities
 
-All Core libraries can be accessed via MyGet https://www.myget.org/feed/Packages/landis-ii-v7
+All Core libraries can be accessed via MyGet https://www.myget.org/feed/Packages/landis-ii-v8
