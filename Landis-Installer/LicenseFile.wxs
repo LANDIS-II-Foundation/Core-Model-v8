@@ -1,7 +1,7 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Fragment>
         <DirectoryRef Id="License">
-            <Component Id="cmpxDp458g3dPj9eX.FVA8xkRKRouA" Guid="{A02BD105-EDA7-43DF-B649-FC08DB505691}">
+            <Component Id="cmpxDp458g3dPj9eX.FVA8xkRKRouA" Guid="{4296BF3C-DED9-4E05-BA4E-4BAE5234AF07}">
                 <File Id="filIRpHIMK23r3OrsqTSExD_UdBEJw" KeyPath="yes" Source="$(var.LicensePath)\LANDIS-II_Binary_license.rtf" />
             </Component>
         </DirectoryRef>
