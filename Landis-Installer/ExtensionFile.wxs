@@ -1,7 +1,7 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Fragment>
         <DirectoryRef Id="Extensions">
-            <Component Id="cmpT89ZE7m9F6ZxoBsVEWl9Mf1O1F0" Guid="{CDE72174-DF64-48D7-9BB4-C5824AC5B9D0}">
+            <Component Id="cmpT89ZE7m9F6ZxoBsVEWl9Mf1O1F0" Guid="{74BC094C-4017-4B64-AAA3-D9637EA43B92}">
                 <File Id="fil8aYfdjIL9TjgFKxONOk_aluZylo" KeyPath="yes" Source="$(var.ExtensionPath)\extensions.xml" />
             </Component>
         </DirectoryRef>
